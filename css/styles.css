@@ -421,19 +421,29 @@ h5,
   border-radius: 0.5rem;
 }
 
-.card.o1{
+.o1{
   -webkit-animation-delay: calc( var(--interval) * 1);
   animation-delay: calc( var(--interval) * 1);
 }
 
-.card.o2{
+.o2{
   -webkit-animation-delay: calc( var(--interval) * 2);
   animation-delay: calc( var(--interval) * 2);
 }
 
-.card.o3{
+.o3{
   -webkit-animation-delay: calc( var(--interval) * 3);
   animation-delay: calc( var(--interval) * 3);
+}
+
+.o4{
+  -webkit-animation-delay: calc( var(--interval) * 4);
+  animation-delay: calc( var(--interval) * 4);
+}
+
+.o5{
+  -webkit-animation-delay: calc( var(--interval) * 5);
+  animation-delay: calc( var(--interval) * 5);
 }
 
 .card__thumbnail {
@@ -516,6 +526,43 @@ h5,
 .projects__card:last-child {
   border-right: 0;
 }
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
 
 .projects__title-M {
   font-weight: 900;
@@ -616,39 +663,6 @@ h5,
   height: 8px;
   overflow: hidden;
 }
-
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  }
-  @-webkit-keyframes fadeInLeft {
-  0% {
-  opacity: 0;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-  opacity: 1;
-  -webkit-transform: none;
-  transform: none;
-  }
-  }
-  @keyframes fadeInLeft {
-  0% {
-  opacity: 0;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-  opacity: 1;
-  -webkit-transform: none;
-  transform: none;
-  }
-  } 
 
 /*-------CONTACT-------*/
 .parallax {

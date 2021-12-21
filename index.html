@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>inBlue Design</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+
+        <!-------HEADER------->
+        <header class="header">
+            <img src="./assets/views/in3lue.svg" alt="inBlue Design Logo" class="header__logo" />
+            <nav class="header__menu" aria-roledescription="navMenu">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="" class="header__link--selected">Inicio</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./sections/about.html" class="header__link">Mi Perfil</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./sections/projects.html" class="header__link">Proyectos</a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">diseño corporativo</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">diseño editorial</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">packaging & labeling</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">diseño ux/ui</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">diseño digital</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__item">
+                        <a href="./sections/caseStudies.html" class="header__link">Casos de Estudio</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./sections/contact.html" class="header__link">Contactate</a>
+                    </li>
+                    <!-------LANG CHOICE--------->
+                    <li class="header__item">
+                        <form>
+                            <select name="lang" class="header__select">
+                                <option value="en">Castellano [es]</option>
+                                <option value="es">English [en]</option>
+                            </select>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-------CONTAINER------->
+        <main class="container">
+            <section class="container__heading">
+                <h1 class="container__title-XL--main">welcome to my world</h1>
+                <h2 class="container__title-L">just making things happen</h2>
+                <h3 class="container__title-M">Casos de Estudio</h3>
+            </section>
+            <section class="cardWrapper">
+                <div class="card">
+                    <h2 class="card__title-L">UX/UI Galeno APP</h2>
+                    <a href="" class="card__thumbnail">
+                        <img src="./assets/cases/mainGaleno.png" alt="Galeno APP / Rediseño" class="card__image">
+                    </a>
+                    <P class="card__description">Propuesta de rediseño mediante la integración de diseño UX con el
+                        objetivo
+                        de minimizar las necesidades insatisfechas en cuanto a accesibilidad, navegabilidad y
+                        usabilidad.
+                    </P>
+                    <a href="#" class="btn">
+                        <span class="btn__label">Más Info</span>
+                        <i class="bnt__icon fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <h2 class="card__title-L">Naming + Diseño Corporativo</h2>
+                    <a href="" class="card__thumbnail">
+                        <img src="./assets/cases/mainMagma.png" alt="Diseño Corporativo | Magma Group"
+                            class="card__image">
+                    </a>
+                    <P class="card__description">Diseño Corporativo para ‘Magma Group’, empresa que comercializa
+                        trofeos,
+                        medallas, recompensas y condecoraciones en sistema con las submarcas de sus cuatro unidades de
+                        negocio.
+                    </P>
+                    <a href="#" class="btn">
+                        <span class="btn__label">Más Info</span>
+                        <i class="bnt__icon fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <h2 class="card__title-L">Fotografía Digital | Montaje</h2>
+                    <a href="" class="card__thumbnail"><img src="./assets/cases/mainMarisa.png"
+                            alt="Montaje | Marisa Lemcke" class="card__image"></a>
+                    <P class="card__description">Preproducción, producción, postproducción, montaje y edición
+                        fotográfica
+                        para el diseño de tapa y booklet de disco de covers de Jazz & Tango. Producción general de
+                        imagen
+                        visual en redes sociales.</P>
+                    <a href="#" class="btn">
+                        <span class="btn__label">Más Info</span>
+                        <i class="bnt__icon fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-------FOOTER------->
+        <footer class="footer">
+            <p class="footer__text">©2021 | inBlue Design | Vale Ferro</p>
+            <div class="networks--foot">
+                <div class="networks__wrapper">
+                    <a href="" class="networks__link"><i class="fab networks__icon--foot fa-linkedin"></i></a>
+                </div>
+                <div class="networks__wrapper">
+                    <a href="" class="networks__link"><i class="fab networks__icon--foot fa-github"></i></a>
+                </div>
+                <div class="networks__wrapper">
+                    <a href="" class="networks__link"><i class="fab networks__icon--foot fa-behance"></i></a>
+                </div>
+                <div class="networks__wrapper">
+                    <a href="" class="networks__link"><i class="fab networks__icon--foot fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    </div>
+
+</body>
+
+</html>

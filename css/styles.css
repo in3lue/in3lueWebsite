@@ -799,12 +799,12 @@ h5,
 
 /*-------FOOTER-------*/
 .footer {
-  grid-area: footer;
+  /* grid-area: footer;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 1rem 3rem;
+  padding: 1rem 3rem; */
   background-image: url("../assets/views/footerBG.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -966,16 +966,18 @@ h5,
   }
 
   .footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
     background-image: url("../assets/views/footerBG.png");
     background-repeat: no-repeat;
     background-position: top center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
   }
 
-  .footer__text {
+  p, .footer__text {
     font-size: 1.5rem;
     padding: 2rem;
     color: #CCC;

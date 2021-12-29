@@ -135,28 +135,13 @@ body {
 
 /*-------MAIN-------*/
 .mainBox {
-  /* grid-area: container;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   padding-bottom: 1rem;
 }
 
 .mainBox__bottom {
-  /* grid-area: container;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   padding-bottom: 0;
 }
 
-.mainBox__heading {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
 h1,
 .mainBox__title-XL {
   font-size: 3rem;
@@ -340,8 +325,8 @@ h4,
 }
 h5,
 .progressBar__title {
-  font-size: 0.9rem;
-  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: #9e9e9e;
   margin-bottom: 0.15rem;
@@ -354,7 +339,16 @@ h5,
   justify-content: center;
   gap: 2rem;
 }
-
+.mainBox__text {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+.mainBox__list {
+  list-style: square;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color:#007890;
+}
 .mainBox__quote {
   padding: 3rem;
   font-style: italic;
@@ -379,6 +373,9 @@ h5,
   gap: 2rem;
 }
 
+.mainBox__image {
+  width: 100%;
+}
 /*-------CARDS-------*/
 .cardWrapper {
   /* display: flex;
@@ -608,9 +605,7 @@ h5,
 }
 
 .image {
-  grid-area: image;
-  grid-column: 3 / span 2;
-  grid-row: 1 / span 2;
+  width: auto;
 }
 
 /*-------PROGRESS BAR-------*/

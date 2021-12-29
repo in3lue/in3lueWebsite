@@ -53,7 +53,7 @@
 }
 
 .link-light {
-  color: #f1f1f1;
+  color: #f8f9fa;
 }
 .link-light:hover, .link-light:focus {
   color: #f9fafb;
@@ -488,7 +488,7 @@
 }
 
 .border-light {
-  border-color: #f1f1f1 !important;
+  border-color: #f8f9fa !important;
 }
 
 .border-dark {

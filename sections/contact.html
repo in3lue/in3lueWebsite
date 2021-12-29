@@ -2,145 +2,164 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../assets/favicon/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>inBlue Design :: Proyectos</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="../assets/favicon/site.webmanifest">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/styles.css" />
+	<title>inBlue Design :: Proyectos</title>
 </head>
 
 <body>
-    <div class="mainContainer">
-        <!-------HEADER--------->
-        <header class="header">
-            <img src="../assets/views/in3lue.svg" alt="inBlue Design Logo" class="header__logo flipInY">
-            <nav class="header__menu" aria-roledescription="navMenu">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a href="../index.html" class="header__link">Inicio</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="about.html" class="header__link">Mi Perfil</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="projects.html" class="header__link">Proyectos</a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="" class="submenu__link">diseño corporativo</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">diseño editorial</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">packaging & labeling</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">diseño ux/ui</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">diseño digital</a></li>
-                        </ul>
-                    </li>
-                    <li class="header__item">
-                        <a href="caseStudies.html" class="header__link">Casos de Estudio</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="" class="header__link--selected">Contactate</a>
-                    </li>
-                    <!-------LANG CHOICE--------->
-                    <li class="header__item">
-                        <form>
-                            <select name="lang" class="header__select">
-                                <option value="en">Castellano [es]</option>
-                                <option value="es">English [en]</option>
-                            </select>
-                        </form>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+	<div class="mainContainer">
+		<!-------HEADER--------->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light opacity-75 header">
+			<div class="container-fluid">
+				<a class="navbar-brand header__logo flipInY" href="../index.html">
+					<img src="../assets/views/in3lue.svg" alt="in3lue Design" width="70px" />
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+					<ul class="navbar-nav justify-content-start">
+						<li class="nav-item header__item">
+							<a class="header__link" href="../index.html">Inicio</a>
+						</li>
+						<li class="nav-item header__item">
+							<a class="header__link" href="./about.html">Perfil</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="header__link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Proyectos
+							</a>
+							<ul class="dropdown-menu submenu" aria-labelledby="navbarDropdownMenuLink">
+								<li>
+									<a class="dropdown-item submenu__link" href="./projects.html">Marca y Diseño Corporativo</a>
+								</li>
+								<li>
+									<a class="dropdown-item submenu__link" href="./projects.html">Diseño UX/UI</a>
+								</li>
+								<li>
+									<a class="dropdown-item submenu__link" href="./projects.html">Diseño Editorial</a>
+								</li>
+								<li>
+									<a class="dropdown-item submenu__link" href="./projects.html">Multimedia y Diseño Digital</a>
+								</li>
+								<li>
+									<a class="dropdown-item submenu__link" href="./projects.html">Packaging & Labeling</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item header__item">
+							<a class="header__link" href="./caseStudies.html">Casos de Estudio</a>
+						</li>
+						<li class="nav-item header__item">
+							<a class="header__link selected" aria-current="page" href="./contact.html">Contactame</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-        <!-------CONTAINER--------->
-        <main class="container__bottom">
-            <section class="container__heading">
-                <h1 class="container__title-XL fadeInDown">sigamos en contacto</h1>
-                <h3 class="container__title-M">Maneras de contactarme</h3>
-            </section>
-            <section class="parallax">
-            </section>
-            <section class="container__contact">
-                <form class="form__wrapper">
-                    <fieldset class="form__fieldset">
-                        <legend class="form__legend">// Tus datos</legend>
-                        <div>Nombre. <input type="text" placeholder="Nombre" class="form__input"></div>
-                        <div>Apellido. <input type="text" placeholder="Apellido" class="form__input"></div>
-                        <div>Email. <input type="email" placeholder="Mail Corporativo" class="form__input"></div>
-                    </fieldset>
-                    <fieldset class="form__fieldset">
-                        <legend class="form__legend">// Asunto del Mensaje</legend>
-                        <div>
-                            <label for="contactType">Asunto. </label>
-                            <input type="radio" name="contactType" value="B"> Presupuesto
-                            <input type="radio" name="contactType" value="G"> General
-                            <input type="radio" name="contactType" value="WwU"> Trabajar en inBlue
-                        </div>
-                        <div>Tu mensaje. <textarea type="text" name="Message" required="required"
-                                placeholder="Tu mensaje" class="form__textarea"></textarea></div>
-                        <div><input class="btn--form" type="reset" value="Reset" />&nbsp;&nbsp;<input class="btn--form"
-                                type="submit" value="Send" /></div>
-                    </fieldset>
-                </form>
-                <div class="networks">
-                    <div class="networks__wrapper">
-                        <i class="fab networks__icon fa-linkedin"></i>
-                        <a href="" class="networks__link">
-                            <h4 class="networks__title">linkedin</h4>
-                        </a>
-                    </div>
-                    <div class="networks__wrapper">
-                        <i class="fab networks__icon fa-github"></i>
-                        <a href="" class="networks__link">
-                            <h4 class="networks__title">github</h4>
-                        </a>
-                    </div>
-                    <div class="networks__wrapper">
-                        <i class="fab networks__icon fa-behance-square"></i>
-                        <a href="" class="networks__link">
-                            <h4 class="networks__title">behance</h4>
-                        </a>
-                    </div>
-                    <div class="networks__wrapper">
-                        <i class="fab networks__icon fa-whatsapp"></i>
-                        <a href="" class="networks__link">
-                            <h4 class="networks__title">Whatsapp</h4>
-                        </a>
-                    </div>
+		<!-------CONTAINER--------->
+		<main class="mainBox__bottom">
+			<section class="mainBox__heading">
+				<h1 class="mainBox__title-XL fadeInDown">sigamos en contacto</h1>
+				<h3 class="mainBox__title-M">Maneras de contactarme</h3>
+			</section>
+			<section class="parallax">
+			</section>
+			<section class="mainBox__contact">
+				<form class="form__wrapper">
+					<fieldset class="form__fieldset">
+						<legend class="form__legend">// Tus datos</legend>
+						<div>Nombre. <input type="text" placeholder="Nombre" class="form__input"></div>
+						<div>Apellido. <input type="text" placeholder="Apellido" class="form__input"></div>
+						<div>Email. <input type="email" placeholder="Mail Corporativo" class="form__input"></div>
+					</fieldset>
+					<fieldset class="form__fieldset">
+						<legend class="form__legend">// Asunto del Mensaje</legend>
+						<div>
+							<label for="contactType">Asunto. </label>
+							<input type="radio" name="contactType" value="B"> Presupuesto
+							<input type="radio" name="contactType" value="G"> General
+							<input type="radio" name="contactType" value="WwU"> Trabajar en inBlue
+						</div>
+						<div>Tu mensaje. <textarea type="text" name="Message" required="required" placeholder="Tu mensaje"
+								class="form__textarea"></textarea></div>
+						<div><input class="btn--form" type="reset" value="Reset" />&nbsp;&nbsp;<input class="btn--form"
+								type="submit" value="Send" /></div>
+					</fieldset>
+				</form>
+				<div class="networks">
+					<div class="networks__wrapper">
+						<i class="fab networks__icon fa-linkedin"></i>
+						<a href="" class="networks__link">
+							<h4 class="networks__title">linkedin</h4>
+						</a>
+					</div>
+					<div class="networks__wrapper">
+						<i class="fab networks__icon fa-github"></i>
+						<a href="" class="networks__link">
+							<h4 class="networks__title">github</h4>
+						</a>
+					</div>
+					<div class="networks__wrapper">
+						<i class="fab networks__icon fa-behance-square"></i>
+						<a href="" class="networks__link">
+							<h4 class="networks__title">behance</h4>
+						</a>
+					</div>
+					<div class="networks__wrapper">
+						<i class="fab networks__icon fa-whatsapp"></i>
+						<a href="" class="networks__link">
+							<h4 class="networks__title">Whatsapp</h4>
+						</a>
+					</div>
 
-                </div>
-            </section>
-            <section class="parallax2">
-            </section>
-        </main>
+				</div>
+			</section>
+			<section class="parallax2">
+			</section>
+		</main>
 
-        <!-------FOOTER------->
-        <footer class="footer">
-            <p class="footer__text">©2021 | inBlue Design | Vale Ferro</p>
-            <div class="networks--foot">
-                <div class="networks__wrapper">
-                    <a href="" class="networks__link"><i class="fab networks__icon--foot fa-linkedin"></i></a>
-                </div>
-                <div class="networks__wrapper">
-                    <a href="" class="networks__link"><i class="fab networks__icon--foot fa-github"></i></a>
-                </div>
-                <div class="networks__wrapper">
-                    <a href="" class="networks__link"><i class="fab networks__icon--foot fa-behance"></i></a>
-                </div>
-                <div class="networks__wrapper">
-                    <a href="" class="networks__link"><i class="fab networks__icon--foot fa-whatsapp"></i></a>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
-    </div>
-</body>
-
-</html>
+		<!-------FOOTER------->
+		<footer class="footer">
+			<div class="footer__data">
+				<p class="footer__text">©2021 | inBlue Design | Vale Ferro</p>
+				<select name="lang" class="footer__select">
+					<option value="es">[es]</option>
+					<option value="en">[en]</option>
+				</select>
+			</div>
+			<div class="footer__network">
+				<div class="networks__wrapper">
+					<a href="" class="networks__link"><i class="fab footer__netIcon fa-linkedin"></i></a>
+				</div>
+				<div class="networks__wrapper">
+					<a href="" class="networks__link"><i class="fab footer__netIcon fa-github"></i></a>
+				</div>
+				<div class="networks__wrapper">
+					<a href="" class="networks__link"><i class="fab footer__netIcon fa-behance"></i></a>
+				</div>
+				<div class="networks__wrapper">
+					<a href="" class="networks__link"><i class="fab footer__netIcon fa-whatsapp"></i></a>
+				</div>
+			</div>
+		</footer>
+		<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"></script>
+	</body>

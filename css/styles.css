@@ -533,6 +533,15 @@ h5,
   font-size: 0.8rem;
 }
 
+.projects__description span{
+    font-size: 0.7rem;
+    display: inline-block;
+    text-align: LEFT;
+    color: #FF6B23;
+    BORDER-TOP: 1PX dashed #ccc;
+    margin-top: .5rem;
+}
+
 .projects__image {
   width: 100%;
 }

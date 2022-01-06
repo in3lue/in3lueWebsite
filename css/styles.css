@@ -467,7 +467,6 @@ h5,
   flex-wrap: wrap;
   flex-direction: row;
   gap: 1rem;
-  padding: 1rem 3rem;
   width: 100%;
   justify-content: center;
 }
@@ -477,7 +476,7 @@ h5,
 }
 
 .projects__card {
-  border-right: 1px dashed #e0e0e0;
+  border-right: 1px dashed #ccc;
   padding: 0px 1rem 0px 0px;
 }
 
@@ -531,15 +530,14 @@ h5,
 
 .projects__description {
   font-size: 0.8rem;
+  margin-bottom: 0.25rem;
 }
 
-.projects__description span{
-    font-size: 0.7rem;
-    display: inline-block;
-    text-align: LEFT;
+.projects__tags{
+    font-size: 0.8rem;
     color: #FF6B23;
-    BORDER-TOP: 1PX dashed #ccc;
-    margin-top: .5rem;
+    border-top: 1px dashed #b3b3b3;
+    padding-top: 0.25rem;
 }
 
 .projects__image {
@@ -788,6 +786,10 @@ h5,
   flex-direction: row;
 }
 
+.divider {
+  margin: 3rem 0;
+  box-shadow: 1px 1px 1rem rgba(126, 126, 126, 0.5);
+}
 
 /*---------------------------*/
 /*-------MEDIA QUERIES-------*/
@@ -920,11 +922,6 @@ h5,
     line-height: 1.2rem;
     margin: 0.5rem 1rem 1rem 1rem;
   }
-  .projects__description {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-    margin: 0.5rem 1rem 1rem 1rem;
-  }
   .btn {
     height: 2.5rem;
     padding: 0 15px;
@@ -938,6 +935,11 @@ h5,
   }
   .btn__label {
     font-size: 0.8rem;
+  }
+
+  .projects__card {
+    border-right: none;
+    padding: .25rem;
   }
   .fas {
     font-size: 0.8rem;

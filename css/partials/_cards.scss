@@ -1,7 +1,3 @@
-.cardWrapper {
-  justify-content: center;
-  align-content: center;
-}
 
 .card {
   box-shadow: 1px 1px 1rem rgba(126, 126, 126, 0.2);
@@ -10,6 +6,10 @@
   margin-bottom: 1rem;
   &__thumbnail {
     overflow: hidden;
+  }
+  &__wrapper {
+    justify-content: center;
+    align-content: center;
   }
   &__title-L {
     background-color: rgba(0, 0, 0, 0.3);

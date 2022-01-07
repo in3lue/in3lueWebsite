@@ -91,6 +91,10 @@ body {
   text-align: left;
 }
 
+.mainBox__title-M--child {
+  margin-top: 0;
+}
+
 .mainBox__title-S {
   font-size: 1.25rem;
   color: #6d6e71;
@@ -98,6 +102,10 @@ body {
   margin-top: 1rem;
   margin-bottom: 0.75rem;
   text-align: left;
+}
+
+.mainBox__title-S::before {
+  content: "\\\\ ";
 }
 
 .progressBar__title {
@@ -290,7 +298,6 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 1rem;
-  padding: 1rem 3rem;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -305,7 +312,7 @@ body {
 }
 
 .projects__card {
-  border-right: 1px dashed #e0e0e0;
+  border-right: 1px dashed #CCC;
   padding: 0px 1rem 0px 0px;
 }
 
@@ -322,30 +329,24 @@ body {
 
 .projects__description {
   font-size: 0.8rem;
+  margin-bottom: 0.25rem;
 }
 
 .projects__tags {
   font-size: 0.8rem;
   color: #FF6B23;
-  border-top: 1px dashed #ccc;
-  margin-top: .5rem;
+  border-top: 1px dashed #b3b3b3;
+  padding-top: 0.25rem;
 }
 
 .projects__image {
   width: 100%;
+  overflow: hidden;
 }
 
 .breadcrumb {
   padding: 1rem;
   font-size: 0.8rem;
-}
-
-.cardWrapper {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .card {
@@ -358,6 +359,14 @@ body {
 
 .card__thumbnail {
   overflow: hidden;
+}
+
+.card__wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .card__title-L {

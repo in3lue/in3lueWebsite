@@ -36,6 +36,9 @@
     background-repeat: no-repeat;
     text-align: left;
   }
+  &__title-M--child{
+    margin-top: 0;
+  }  
   &__title-S {
     font-size: 1.25rem;
     color: #6d6e71;
@@ -43,6 +46,9 @@
     margin-top: 1rem;
     margin-bottom: 0.75rem;
     text-align: left;
+  }
+  &__title-S::before {
+    content: "\\\\ ";
   }
 }
 .progressBar__title {

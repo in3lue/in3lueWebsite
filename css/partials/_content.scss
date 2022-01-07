@@ -48,7 +48,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     gap: 1rem;
-    padding: 1rem 3rem;
     width: 100%;
     justify-content: center;
     & > div {
@@ -57,7 +56,7 @@
     }
   }
   &__card {
-    border-right: 1px dashed #e0e0e0;
+    border-right: 1px dashed #CCC;
     padding: 0px 1rem 0px 0px;
     &:last-child {
       border-right: 0;
@@ -71,18 +70,18 @@
   }
   &__description {
     font-size: 0.8rem;
+    margin-bottom: 0.25rem;
   }
   &__tags{
       font-size: 0.8rem;
       color: #FF6B23;
-      border-top: 1px dashed #ccc;
-      margin-top: .5rem;
+      border-top: 1px dashed #b3b3b3;
+      padding-top: 0.25rem;
   }
   &__image {
     width: 100%;
+    overflow: hidden;
   }
 }
-
-
 
 

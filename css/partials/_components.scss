@@ -1,7 +1,16 @@
 .breadcrumb{
   padding:1rem;
   font-size: 0.8rem;
+  &-link{
+    color:#7c7c7c;
+    text-decoration: none;
+    &:hover{
+      color:#5f5f5f;
+      text-decoration: none;
+    }
+  }
 }
+
 .progressBar {
   padding: 0.01rem 0.35rem;
   position: relative;

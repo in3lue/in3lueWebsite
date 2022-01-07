@@ -279,7 +279,7 @@ body {
   width: 100%;
 }
 
-.projects__Wrapper {
+.projects__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,7 +297,7 @@ body {
           justify-content: center;
 }
 
-.projects__Wrapper > div {
+.projects__wrapper > div {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;

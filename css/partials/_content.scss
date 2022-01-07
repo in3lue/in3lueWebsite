@@ -8,14 +8,19 @@
     gap: 2rem;
   }
   &__text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.2rem;
   }
   &__list {
-    list-style: square;
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
     color:#007890;
+  }
+  &__item::marker {
+      color:#007890;
+      font-size: 1rem;
+      font-weight: 800;
+      content: "» ";
   }
   &__quote {
     padding: 2rem 1rem 1rem 1rem;

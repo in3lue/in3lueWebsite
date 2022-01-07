@@ -1,0 +1,54 @@
+.mainBox{
+  &__title-XL {
+    font-size: 3rem;
+    letter-spacing: -0.15rem;
+    font-weight: 900;
+    color: #007890;
+    text-align: center;
+    text-transform: lowercase;
+    margin-top: 5rem;
+    &--main {
+      font-size: 3rem;
+      letter-spacing: -0.15rem;
+      font-weight: 900;
+      color: #007890;
+      text-align: center;
+      text-transform: lowercase;
+      margin-top: 10rem;
+    }
+  }
+  &__title-L {
+    font-size: 1.25rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  &__title-M {
+    font-size: 1.5rem;
+    color: #6d6e71;
+    padding-left: 1.25rem;
+    margin-top: 4rem;
+    margin-bottom: 0.75rem;
+    background-image: url("../assets/views/h3Back.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+  }
+  &__title-S {
+    font-size: 1.25rem;
+    color: #6d6e71;
+    padding-left: 0.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    text-align: left;
+  }
+}
+.progressBar__title {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #9e9e9e;
+  margin-bottom: 0.15rem;
+}

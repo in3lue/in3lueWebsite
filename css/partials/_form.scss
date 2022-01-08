@@ -1,0 +1,62 @@
+.form{
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 0rem;
+  }
+  &__fieldset {
+    padding: 1rem 2rem;
+    border: 1px solid #b1b1b1;
+    border-radius: 0.25rem;
+    & > div {
+      padding: 0.25rem;
+      font-size: 0.8rem;
+      color: #9e9e9e;
+    }
+  }
+  &__legend {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+  }
+  &__input {
+    border: 1px solid #ccc;
+    font: normal 400 0.75rem sans-serif;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    width: 100%;
+  }
+  &__textarea {
+    border: 1px solid #ccc;
+    font: normal 400 0.75rem sans-serif;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    width: 100%;
+    height: 4.4rem;
+  }
+  &__btn {
+    border: none;
+    height: 2rem;
+    padding: 0 015px;
+    color: #fff;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    align-items: center;
+    background-color: #007890;
+    right: 1rem;
+    bottom: -1rem;
+    &:hover {
+      background-color: #8f1e07;
+      text-decoration: none;
+      transition: all 0.5s ease-out;
+    }
+  }
+}
+
+
+
+
+

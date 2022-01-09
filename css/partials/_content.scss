@@ -1,0 +1,92 @@
+.mainBox {
+  padding-bottom: 1rem;
+  &__bottom {
+    padding-bottom: 0;
+  }
+  &__wrapper {
+    justify-content: center;
+    gap: 2rem;
+  }
+  &__text {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  &__list {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color:#007890;
+  }
+  &__item::marker {
+      color:#007890;
+      font-size: 1rem;
+      font-weight: 800;
+      content: "» ";
+  }
+  &__quote {
+    padding: 2rem 1rem 1rem 1rem;
+    font-style: italic;
+    font-size: 2rem;
+    color: #959595;
+    text-align: center;
+  }
+  &__ytVideo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__contact {
+    grid-area: container;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  &__image {
+    width: 100%;
+  }
+}
+.projects{
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    & > div {
+      flex: 1 1 auto;
+      width: 300px;
+    }
+  }
+  &__card {
+    border-right: 1px dashed #CCC;
+    padding: 0px 1rem 0px 0px;
+    &:last-child {
+      border-right: 0;
+    }
+  }
+  &__title-M {
+    font-weight: 900;
+    color: #ad1457;
+    margin: 5px 0px;
+    font-size: 1.2rem;
+  }
+  &__description {
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+  }
+  &__tags{
+      font-size: 0.8rem;
+      color: #FF6B23;
+      border-top: 1px dashed #b3b3b3;
+      padding-top: 0.25rem;
+  }
+  &__image {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+

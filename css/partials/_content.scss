@@ -47,46 +47,5 @@
     width: 100%;
   }
 }
-.projects{
-  &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 1rem;
-    width: 100%;
-    justify-content: center;
-    & > div {
-      flex: 1 1 auto;
-      width: 300px;
-    }
-  }
-  &__card {
-    border-right: 1px dashed #CCC;
-    padding: 0px 1rem 0px 0px;
-    &:last-child {
-      border-right: 0;
-    }
-  }
-  &__title-M {
-    font-weight: 900;
-    color: #ad1457;
-    margin: 5px 0px;
-    font-size: 1.2rem;
-  }
-  &__description {
-    font-size: 0.8rem;
-    margin-bottom: 0.25rem;
-  }
-  &__tags{
-      font-size: 0.8rem;
-      color: #FF6B23;
-      border-top: 1px dashed #b3b3b3;
-      padding-top: 0.25rem;
-  }
-  &__image {
-    width: 100%;
-    overflow: hidden;
-  }
-}
 
 

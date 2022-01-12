@@ -14,13 +14,13 @@
   &__list {
     font-size: 1rem;
     line-height: 1.3rem;
-    color:#007890;
+    color: #007890;
   }
   &__item::marker {
-      color:#007890;
-      font-size: 1rem;
-      font-weight: 800;
-      content: "» ";
+    color: #007890;
+    font-size: 1rem;
+    font-weight: 800;
+    content: "» ";
   }
   &__quote {
     padding: 2rem 1rem 1rem 1rem;
@@ -47,5 +47,3 @@
     width: 100%;
   }
 }
-
-

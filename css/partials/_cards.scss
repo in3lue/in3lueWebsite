@@ -1,4 +1,3 @@
-
 .card {
   box-shadow: 1px 1px 1rem rgba(126, 126, 126, 0.2);
   border-radius: 0.5rem;
@@ -35,7 +34,7 @@
   }
 }
 
-.projects{
+.projects {
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +48,7 @@
     }
   }
   &__card {
-    border-right: 1px dashed #CCC;
+    border-right: 1px dashed #ccc;
     padding: 0px 1rem 0px 0px;
     &:last-child {
       border-right: 0;
@@ -65,11 +64,11 @@
     font-size: 0.8rem;
     margin-bottom: 0.25rem;
   }
-  &__tags{
-      font-size: 0.8rem;
-      color: #FF6B23;
-      border-top: 1px dashed #b3b3b3;
-      padding-top: 0.25rem;
+  &__tags {
+    font-size: 0.8rem;
+    color: #ff6b23;
+    border-top: 1px dashed #b3b3b3;
+    padding-top: 0.25rem;
   }
   &__image {
     width: 100%;
@@ -101,4 +100,3 @@
     margin-right: 0.75rem;
   }
 }
-

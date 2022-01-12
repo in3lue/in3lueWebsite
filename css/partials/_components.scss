@@ -1,11 +1,11 @@
-.breadcrumb{
-  padding:1rem;
+.breadcrumb {
+  padding: 1rem;
   font-size: 0.8rem;
-  &-link{
-    color:#7c7c7c;
+  &-link {
+    color: #7c7c7c;
     text-decoration: none;
-    &:hover{
-      color:#5f5f5f;
+    &:hover {
+      color: #5f5f5f;
       text-decoration: none;
     }
   }
@@ -24,7 +24,7 @@
     margin-bottom: 0.75rem;
   }
   &__title::before {
-    content:"¤ ";
+    content: "¤ ";
   }
   &__subTitle {
     font-size: 0.9rem;
@@ -94,11 +94,7 @@
     text-decoration: none;
     padding-left: 0.15rem;
     &:hover {
-      color:#585858;
+      color: #585858;
     }
   }
 }
-
-
-
-

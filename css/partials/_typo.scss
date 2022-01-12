@@ -1,4 +1,4 @@
-.mainBox{
+.mainBox {
   &__title-XL {
     font-size: 3rem;
     letter-spacing: -0.15rem;
@@ -8,12 +8,6 @@
     text-transform: lowercase;
     margin-top: 5rem;
     &--main {
-      font-size: 3rem;
-      letter-spacing: -0.15rem;
-      font-weight: 900;
-      color: #007890;
-      text-align: center;
-      text-transform: lowercase;
       margin-top: 10rem;
     }
   }
@@ -35,17 +29,10 @@
     background-position: left;
     background-repeat: no-repeat;
     text-align: left;
-    &--child{
-      font-size: 1.5rem;
-      color: #6d6e71;
+    &--child {
       padding-left: 1.25rem;
-      margin-bottom: 0.75rem;
-      background-image: url("../assets/views/h3Back.png");
-      background-position: left;
-      background-repeat: no-repeat;
-      text-align: left;
       margin-top: 0;
-    }  
+    }
   }
   &__title-S {
     font-size: 1.25rem;

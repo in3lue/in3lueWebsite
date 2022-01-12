@@ -62,12 +62,6 @@ body {
 }
 
 .mainBox__title-XL--main {
-  font-size: 3rem;
-  letter-spacing: -0.15rem;
-  font-weight: 900;
-  color: #007890;
-  text-align: center;
-  text-transform: lowercase;
   margin-top: 10rem;
 }
 
@@ -93,14 +87,7 @@ body {
 }
 
 .mainBox__title-M--child {
-  font-size: 1.5rem;
-  color: #6d6e71;
   padding-left: 1.25rem;
-  margin-bottom: 0.75rem;
-  background-image: url("../assets/views/h3Back.png");
-  background-position: left;
-  background-repeat: no-repeat;
-  text-align: left;
   margin-top: 0;
 }
 
@@ -504,7 +491,7 @@ body {
 }
 
 .projects__card {
-  border-right: 1px dashed #CCC;
+  border-right: 1px dashed #ccc;
   padding: 0px 1rem 0px 0px;
 }
 
@@ -526,7 +513,7 @@ body {
 
 .projects__tags {
   font-size: 0.8rem;
-  color: #FF6B23;
+  color: #ff6b23;
   border-top: 1px dashed #b3b3b3;
   padding-top: 0.25rem;
 }

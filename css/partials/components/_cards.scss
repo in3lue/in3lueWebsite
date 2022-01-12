@@ -1,3 +1,5 @@
+@import "../utilities/vars";
+
 .card {
   box-shadow: 1px 1px 1rem rgba(126, 126, 126, 0.2);
   border-radius: 0.5rem;
@@ -16,7 +18,7 @@
     position: absolute;
     font-size: 1rem;
     text-transform: uppercase;
-    color: #fff;
+    color: $white;
     text-shadow: 1px 1px 4px #7e7e7e;
     border-radius: 0.5rem 0rem 0rem 0rem;
     letter-spacing: 0.1rem;
@@ -24,12 +26,12 @@
   &__image {
     width: 100%;
     border-radius: 0.5rem;
-    border: #e0e0e0 1px solid;
+    border: $gray-200 1px solid;
   }
   &__description {
     font-size: 1rem;
     line-height: 1rem;
-    color: #6d6d6d;
+    color: $gray-600;
     margin: 0.5rem 1rem 1rem 1rem;
   }
 }
@@ -48,7 +50,7 @@
     }
   }
   &__card {
-    border-right: 1px dashed #ccc;
+    border-right: 1px dashed $gray-500;
     padding: 0px 1rem 0px 0px;
     &:last-child {
       border-right: 0;
@@ -56,7 +58,7 @@
   }
   &__title-M {
     font-weight: 900;
-    color: #ad1457;
+    color: $altColor;
     margin: 5px 0px;
     font-size: 1.2rem;
   }
@@ -66,37 +68,12 @@
   }
   &__tags {
     font-size: 0.8rem;
-    color: #ff6b23;
-    border-top: 1px dashed #b3b3b3;
+    color: $secondaryColor;
+    border-top: 1px dashed $gray-500;
     padding-top: 0.25rem;
   }
   &__image {
     width: 100%;
     overflow: hidden;
-  }
-}
-
-.btn {
-  border: none;
-  height: 2.5rem;
-  padding: 0 15px;
-  color: #fff;
-  border-radius: 4rem;
-  text-decoration: none;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #007890;
-  position: absolute;
-  right: 1rem;
-  bottom: -1rem;
-  &:hover {
-    background-color: #8f1e07;
-    text-decoration: none;
-    transition: all 0.5s ease-out;
-  }
-  &__label {
-    font-weight: 600;
-    margin-right: 0.75rem;
   }
 }

@@ -1,0 +1,41 @@
+@import "../utilities/vars";
+
+.btn {
+  border: none;
+  height: 2.5rem;
+  padding: 0 15px;
+  color: $white;
+  border-radius: 4rem;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $mainColor;
+  position: absolute;
+  right: 1rem;
+  bottom: -1rem;
+  &:hover {
+    background-color: $secondaryColor;
+    color: $white;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+  &--form {
+    border: none;
+    background-color: $mainColor;
+    color: $white;
+    height: 2rem;
+    padding: 0 15px;
+    border-radius: 0.25rem;
+    &:hover {
+      background-color: $secondaryColor;      
+      color: $white;
+      text-decoration: none;
+      transition: all 0.5s ease-out;
+    }
+  }
+  &__label {
+    font-weight: 600;
+    margin-right: 0.75rem;
+  }
+}

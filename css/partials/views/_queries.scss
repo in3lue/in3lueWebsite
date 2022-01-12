@@ -1,3 +1,5 @@
+@import "../utilities/vars";
+
 /*---------------------------*/
 /*-------MEDIA QUERIES-------*/
 /*---------------------------*/
@@ -27,7 +29,7 @@
   }
   .mainBox__title-S {
     font-size: 1rem;
-    color: #6d6e71;
+    color: $gray-600;
     padding-left: 0.25rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -64,7 +66,7 @@
   }
 
   .selected {
-    color: #007890;
+    color: $mainColor;
   }
 
   .submenu {
@@ -75,11 +77,11 @@
 
   .submenu__link {
     text-decoration: none;
-    color: #db3816;
+    color: $secondaryColor;
     display: block;
     padding: 0.7rem;
     white-space: nowrap;
-    background-color: #ececec;
+    background-color: $gray-200;
     transition: all 0.5s ease-out;
   }
 
@@ -169,7 +171,7 @@
   .footer__text {
     font-size: 0.8rem;
     text-align: center;
-    color: #d4d4d4;
+    color: $gray-200;
     margin: 0px;
   }
 
@@ -187,7 +189,7 @@
     padding: 0.25rem;
     font-family: "Lato", sans-serif;
     font-size: 0.8rem;
-    color: #979797;
+    color: $gray-600;
     cursor: pointer;
   }
   .footer__network {
@@ -197,7 +199,7 @@
 
   .footer__netIcon {
     width: 25px;
-    color: #ccc;
+    color: $gray-400;
     margin: 0.5rem;
     opacity: 0.4;
     font-size: 1.25rem;
@@ -248,7 +250,7 @@
   }
   .networks__icon {
     width: 80px;
-    color: #ccc;
+    color: $gray-400;
     margin: 0.5rem;
     opacity: 0.4;
     font-size: 3rem;
@@ -264,6 +266,6 @@
     list-style: square;
     font-size: 0.8rem;
     line-height: 1rem;
-    color:#007890;
+    color:$mainColor;
   }
 }

@@ -1,10 +1,18 @@
-@import "./partials/reset";
-@import "./partials/typo";
-@import "./partials/header";
-@import "./partials/content";
-@import "./partials/components";
-@import "./partials/cards";
-@import "./partials/form";
-@import "./partials/footer";
-@import "./partials/animations";
-@import "./partials/queries";
+@import "./partials/base/reset";
+@import "./partials/base/typo";
+// base
+
+@import "./partials/layout/header";
+@import "./partials/layout/content";
+@import "./partials/layout/footer";
+@import "./partials/layout/form";
+@import "./partials/layout/animations";
+//layout
+
+@import "./partials/components/cards";
+@import "./partials/components/buttons";
+@import "./partials/components/components";
+//components
+
+//utilities
+@import "./partials/views/queries";

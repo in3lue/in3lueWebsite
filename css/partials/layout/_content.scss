@@ -14,10 +14,10 @@
   &__list {
     font-size: 1rem;
     line-height: 1.3rem;
-    color: #007890;
+    color: mainColor;
   }
   &__item::marker {
-    color: #007890;
+    color: mainColor;
     font-size: 1rem;
     font-weight: 800;
     content: "» ";
@@ -26,7 +26,7 @@
     padding: 2rem 1rem 1rem 1rem;
     font-style: italic;
     font-size: 2rem;
-    color: #959595;
+    color: $gray-500;
     text-align: center;
   }
   &__ytVideo {

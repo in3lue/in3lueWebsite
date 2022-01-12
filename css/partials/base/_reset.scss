@@ -1,3 +1,5 @@
+@import "../utilities/vars";
+
 * {
   margin: 0;
   padding: 0;
@@ -38,13 +40,13 @@ html {
 }
 
 body {
-  background: #f1f1f1 url("../assets/views/bodyBG.png");
+  background: $lightColor url("../assets/views/bodyBG.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
-  color: #585858;
+  color: $gray-800;
   margin: 0px auto;
 }

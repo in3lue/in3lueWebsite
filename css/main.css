@@ -47,7 +47,7 @@ body {
   background-size: cover;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
-  color: #343a40;
+  color: #212B36;
   margin: 0px auto;
 }
 
@@ -69,14 +69,14 @@ body {
   font-size: 1.25rem;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
-  color: #6c757d;
+  color: #637381;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 .mainBox__title-M {
   font-size: 1.5rem;
-  color: #6c757d;
+  color: #637381;
   padding-left: 1.25rem;
   margin-top: 4rem;
   margin-bottom: 0.75rem;
@@ -93,7 +93,7 @@ body {
 
 .mainBox__title-S {
   font-size: 1.25rem;
-  color: #6c757d;
+  color: #637381;
   padding-left: 0.25rem;
   margin-top: 1rem;
   margin-bottom: 0.75rem;
@@ -108,7 +108,7 @@ body {
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  color: #adb5bd;
+  color: #919EAB;
   margin-bottom: 0.15rem;
 }
 
@@ -154,7 +154,7 @@ body {
   padding: 0.75rem 1rem;
   margin: 0.5rem;
   font-size: 1rem;
-  color: #6c757d;
+  color: #637381;
 }
 
 .header__link:hover {
@@ -198,18 +198,18 @@ body {
   display: block;
   padding: 0.7rem;
   white-space: nowrap;
-  background-color: #e9ecef;
+  background-color: #F4F6F8;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .submenu__link:hover {
-  background-image: #e9ecef url("../assets/views/submenuBack.png");
+  background-image: #F4F6F8 url("../assets/views/submenuBack.png");
   background-position: left center;
   background-repeat: no-repeat;
   color: #8f1e07;
-  -webkit-box-shadow: #adb5bd;
-          box-shadow: #adb5bd;
+  -webkit-box-shadow: #919EAB;
+          box-shadow: #919EAB;
   display: block;
 }
 
@@ -250,7 +250,7 @@ body {
   padding: 2rem 1rem 1rem 1rem;
   font-style: italic;
   font-size: 2rem;
-  color: #adb5bd;
+  color: #919EAB;
   text-align: center;
 }
 
@@ -333,7 +333,7 @@ body {
 .footer__text {
   font-size: 1rem;
   text-align: center;
-  color: #e9ecef;
+  color: #F4F6F8;
   margin: 0px;
 }
 
@@ -367,7 +367,7 @@ body {
   padding: 1rem;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
-  color: #6c757d;
+  color: #637381;
   cursor: pointer;
 }
 
@@ -379,7 +379,7 @@ body {
 
 .footer__netIcon {
   width: 40px;
-  color: #ced4da;
+  color: #C4CDD5;
   margin: 0.5rem;
   opacity: 0.4;
   font-size: 1.5rem;
@@ -406,14 +406,14 @@ body {
 
 .form__fieldset {
   padding: 1rem 2rem;
-  border: 1px solid #ced4da;
+  border: 1px solid #C4CDD5;
   border-radius: 0.25rem;
 }
 
 .form__fieldset > div {
   padding: 0.25rem;
   font-size: 0.8rem;
-  color: #adb5bd;
+  color: #919EAB;
 }
 
 .form__legend {
@@ -426,7 +426,7 @@ body {
 }
 
 .form__input {
-  border: 1px solid #adb5bd;
+  border: 1px solid #919EAB;
   font: normal 400 0.75rem sans-serif;
   border-radius: 0.25rem;
   padding: 0.25rem;
@@ -435,7 +435,7 @@ body {
 }
 
 .form__textarea {
-  border: 1px solid #ced4da;
+  border: 1px solid #C4CDD5;
   font: normal 400 0.75rem sans-serif;
   border-radius: 0.25rem;
   padding: 0.25rem;
@@ -676,13 +676,13 @@ body {
 }
 
 .card__title-L {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(22, 28, 36, 0.3);
   padding: 1rem;
   position: absolute;
   font-size: 1rem;
   text-transform: uppercase;
   color: #fff;
-  text-shadow: 1px 1px 4px #7e7e7e;
+  text-shadow: 1px 1px 4px #637381;
   border-radius: 0.5rem 0rem 0rem 0rem;
   letter-spacing: 0.1rem;
 }
@@ -690,13 +690,13 @@ body {
 .card__image {
   width: 100%;
   border-radius: 0.5rem;
-  border: #e9ecef 1px solid;
+  border: #F4F6F8 1px solid;
 }
 
 .card__description {
   font-size: 1rem;
   line-height: 1rem;
-  color: #6c757d;
+  color: #637381;
   margin: 0.5rem 1rem 1rem 1rem;
 }
 
@@ -725,7 +725,7 @@ body {
 }
 
 .projects__card {
-  border-right: 1px dashed #adb5bd;
+  border-right: 1px dashed #919EAB;
   padding: 0px 3rem 0px 0px;
 }
 
@@ -748,7 +748,7 @@ body {
 .projects__tags {
   font-size: 0.8rem;
   color: #db3816;
-  border-top: 1px dashed #adb5bd;
+  border-top: 1px dashed #919EAB;
   padding-top: 0.25rem;
 }
 
@@ -815,12 +815,12 @@ body {
 }
 
 .breadcrumb-link {
-  color: #6c757d;
+  color: #637381;
   text-decoration: none;
 }
 
 .breadcrumb-link:hover {
-  color: #343a40;
+  color: #212B36;
   text-decoration: none;
 }
 
@@ -835,7 +835,7 @@ body {
   font-weight: 600;
   text-transform: lowercase;
   letter-spacing: 0rem;
-  color: #adb5bd;
+  color: #919EAB;
   margin-bottom: 0.75rem;
 }
 
@@ -847,12 +847,12 @@ body {
   font-size: 0.75rem;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
-  color: #6c757d;
+  color: #637381;
   margin-bottom: 0.10rem;
 }
 
 .progressBar__border {
-  border: 1px solid #adb5bd;
+  border: 1px solid #919EAB;
   height: 8px;
   margin-bottom: 0.8rem;
 }
@@ -917,12 +917,12 @@ body {
 .networks__title {
   font-size: 0.75rem;
   text-transform: uppercase;
-  color: #adb5bd;
+  color: #919EAB;
 }
 
 .networks__icon {
   width: 30px;
-  color: #343a40;
+  color: #212B36;
   opacity: 0.5;
   margin: 0.5rem;
   font-size: 1.8rem;
@@ -938,7 +938,7 @@ body {
 }
 
 .networks__link:hover {
-  color: #343a40;
+  color: #212B36;
 }
 
 /*---------------------------*/
@@ -969,7 +969,7 @@ body {
   }
   .mainBox__title-S {
     font-size: 1rem;
-    color: #6c757d;
+    color: #637381;
     padding-left: 0.25rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -1017,7 +1017,7 @@ body {
     display: block;
     padding: 0.7rem;
     white-space: nowrap;
-    background-color: #e9ecef;
+    background-color: #F4F6F8;
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
   }
@@ -1147,7 +1147,7 @@ body {
   .footer__text {
     font-size: 0.8rem;
     text-align: center;
-    color: #e9ecef;
+    color: #F4F6F8;
     margin: 0px;
   }
   .footer__list {
@@ -1169,7 +1169,7 @@ body {
     padding: 0.25rem;
     font-family: "Lato", sans-serif;
     font-size: 0.8rem;
-    color: #6c757d;
+    color: #637381;
     cursor: pointer;
   }
   .footer__network {
@@ -1183,7 +1183,7 @@ body {
   }
   .footer__netIcon {
     width: 25px;
-    color: #ced4da;
+    color: #C4CDD5;
     margin: 0.5rem;
     opacity: 0.4;
     font-size: 1.25rem;
@@ -1237,7 +1237,7 @@ body {
   }
   .networks__icon {
     width: 80px;
-    color: #ced4da;
+    color: #C4CDD5;
     margin: 0.5rem;
     opacity: 0.4;
     font-size: 3rem;

@@ -13,13 +13,13 @@
     align-content: center;
   }
   &__title-L {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(22, 28, 36, 0.3);
     padding: 1rem;
     position: absolute;
     font-size: 1rem;
     text-transform: uppercase;
     color: $white;
-    text-shadow: 1px 1px 4px #7e7e7e;
+    text-shadow: 1px 1px 4px $gray-600;
     border-radius: 0.5rem 0rem 0rem 0rem;
     letter-spacing: 0.1rem;
   }

@@ -1,4 +1,5 @@
 @import "../utilities/vars";
+@import "../views/mediaQueries";
 
 .mainBox {
   &__title-XL {
@@ -12,6 +13,22 @@
     &--main {
       margin-top: 10rem;
     }
+    &--projects {
+      margin-top: 5rem;
+      color: $altColor;
+    }
+    @include smartPhone {
+      font-size: 2rem;
+      letter-spacing: -0.125rem;
+      margin-top: 5rem;
+      color: $secondaryColor;
+    }
+    @include tablet {
+      font-size: 2.2rem;
+      letter-spacing: -0.15rem;
+      margin-top: 5rem;
+      color: $secondaryColor;
+    }
   }
   &__title-L {
     font-size: 1.25rem;
@@ -20,6 +37,16 @@
     color: $gray-600;
     text-align: center;
     margin-bottom: 1rem;
+    @include smartPhone {
+      font-size: 1rem;
+      letter-spacing: 0.15rem;
+      margin-bottom: 0.5rem;
+    }
+    @include tablet {
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+      margin-bottom: 0.5rem;
+    }
   }
   &__title-M {
     font-size: 1.5rem;
@@ -34,6 +61,36 @@
     &--child {
       padding-left: 1.25rem;
       margin-top: 0;
+      @include smartPhone {
+        font-size: 1rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        background: none;
+        text-align: left;
+      }
+      @include tablet {
+        font-size: 1.2rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        background: none;
+        text-align: left;
+      }
+    }
+    @include smartPhone {
+      font-size: 1rem;
+      padding-left: 0.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      background: none;
+      text-align: left;
+    }
+    @include tablet {
+      font-size: 1.2rem;
+      padding-left: 0.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      background: none;
+      text-align: left;
     }
   }
   &__title-S {
@@ -43,15 +100,20 @@
     margin-top: 1rem;
     margin-bottom: 0.75rem;
     text-align: left;
+    @include smartPhone {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+    @include tablet {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
   }
+  
+
   &__title-S::before {
     content: "\\\\ ";
   }
-}
-.progressBar__title {
-  font-size: 0.8rem;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  color: $gray-500;
-  margin-bottom: 0.15rem;
 }

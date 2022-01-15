@@ -1,15 +1,37 @@
 @import "../utilities/vars";
+@import "../views/mediaQueries";
 
 .header {
   padding: 1rem 3rem;
   top: 0px;
+  opacity:0.2;
   position: sticky;
   z-index: 3;
+  @include smartPhone {
+    padding: 0rem;
+    position: inherit;
+  }
+  @include tablet {
+    padding: 0rem;
+    position: inherit;
+  }
   &__logo {
     max-width: 5rem;
+    @include smartPhone {
+      max-width: 7rem;
+    }
+    @include tablet {
+      max-width: 5rem;
+    }
   }
   &__menu {
     margin-top: 1rem;
+    @include smartPhone {
+      margin-top: 3rem;
+    }
+    @include tablet {
+      margin-top: 4rem;
+    }
   }
   &__list {
     list-style: none;
@@ -31,6 +53,16 @@
     margin: 0.5rem;
     font-size: 1rem;
     color: $gray-600;
+    @include smartPhone {
+      padding: 1rem;
+      margin: 0rem;
+      font-size: 1rem;
+    }
+    @include tablet {
+      padding: 1rem;
+      margin: 0rem;
+      font-size: 1.2rem;
+    }
     &:hover {
       color: $mainColor;
       background-image: url("../assets/views/menuBack.png");
@@ -53,6 +85,12 @@
   background-position: bottom center;
   background-repeat: no-repeat;
   cursor: default;
+  @include smartPhone {
+    font-size: 0.9rem;
+  }
+  @include tablet {
+    font-size: 1.2rem;
+  }
 }
 
 .submenu {
@@ -60,6 +98,12 @@
   font-size: 1rem;
   margin-top: 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  @include smartPhone {
+    font-size: 0.9rem;
+  }
+  @include tablet {
+    font-size: 1.2rem;
+  }
   &__item {
     overflow: auto;
     top: -0.2rem;
@@ -72,11 +116,17 @@
     white-space: nowrap;
     background-color: $gray-200;
     transition: all 0.5s ease-out;
+    @include smartPhone {
+      padding: 0.5rem;
+    }
+    @include tablet {
+      padding: 0.5rem;
+    }
     &:hover {
       background-image: $gray-200 url("../assets/views/submenuBack.png");
       background-position: left center;
       background-repeat: no-repeat;
-      color: $altColor;
+      color: $thirdColor;
       box-shadow: $gray-500;
       display: block;
     }

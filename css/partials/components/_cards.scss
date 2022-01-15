@@ -1,16 +1,35 @@
 @import "../utilities/vars";
+@import "../views/mediaQueries";
 
 .card {
   box-shadow: 1px 1px 1rem rgba(126, 126, 126, 0.2);
   border-radius: 0.5rem;
   padding: 0.5rem;
   margin-bottom: 3rem;
+  @include smartPhone {
+    margin-bottom: 1rem;
+  }
+  @include tablet {
+    margin-bottom: 1rem;
+  }
   &__thumbnail {
     overflow: hidden;
   }
   &__wrapper {
     justify-content: center;
     align-content: center;
+    @include smartPhone {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 1rem;
+    }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 2;
+      padding: 1rem;
+    }
   }
   &__title-L {
     background-color: rgba(22, 28, 36, 0.3);
@@ -22,6 +41,12 @@
     text-shadow: 1px 1px 4px $gray-600;
     border-radius: 0.5rem 0rem 0rem 0rem;
     letter-spacing: 0.1rem;
+    @include smartPhone {
+      font-size: 0.8rem;
+    }
+    @include tablet {
+      font-size: 1.2rem;
+    }
   }
   &__image {
     width: 100%;
@@ -33,6 +58,14 @@
     line-height: 1rem;
     color: $gray-600;
     margin: 0.5rem 1rem 1rem 1rem;
+    @include smartPhone {
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
+    @include tablet {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+    }
   }
 }
 
@@ -51,7 +84,13 @@
   }
   &__card {
     border-right: 1px dashed $gray-500;
-    padding: 0px 3rem 0px 0px;
+    padding: 0px 1rem 0px 0px;
+    @include smartPhone {
+      border-right: 0;
+    }
+    @include tablet {
+      border-right: 0;
+    }
     &:last-child {
       border-right: 0;
     }
@@ -64,13 +103,30 @@
   }
   &__description {
     font-size: 0.8rem;
-    margin-bottom: 0.25rem;
+    line-height: 1.2rem;
+    margin: 0.5rem 1rem 1rem 1rem;
+    @include smartPhone {
+      font-size: 0.8rem;
+      margin: 0 0 0.25rem 0;
+    }
+    @include tablet {
+      font-size: 1.2rem;
+      margin: 0 0 0.25rem 0;
+    }
   }
   &__tags {
     font-size: 0.8rem;
     color: $secondaryColor;
     border-top: 1px dashed $gray-500;
     padding-top: 0.25rem;
+    @include smartPhone {
+      font-size: 0.8rem;
+      margin: 0.25rem 0;
+    }
+    @include tablet {
+      font-size: 1.2rem;
+      margin: 0.25rem 0;
+    }
   }
   &__image {
     width: 100%;

@@ -1,5 +1,5 @@
 @import "../utilities/vars";
-@import "../views/mediaQueries";
+@import "../utilities/mixinQueries";
 
 .flipInY {
   -webkit-backface-visibility: visible !important;

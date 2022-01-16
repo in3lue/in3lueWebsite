@@ -1,3 +1,6 @@
+@import "../utilities/vars";
+@import "../views/mediaQueries";
+
 .flipInY {
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;

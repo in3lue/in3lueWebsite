@@ -536,6 +536,22 @@ body {
   width: 100%;
 }
 
+.mainBox__video {
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .mainBox__video {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .mainBox__video {
+    display: none;
+  }
+}
+
 .mainBox__contact {
   grid-area: container;
   display: -webkit-box;
@@ -554,22 +570,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2rem;
-}
-
-.mainBox__image {
-  width: 100%;
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .mainBox__image {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .mainBox__image {
-    display: none;
-  }
 }
 
 .footer {

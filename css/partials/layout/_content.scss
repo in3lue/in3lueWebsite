@@ -1,3 +1,6 @@
+@import "../utilities/vars";
+@import "../utilities/mixinQueries";
+
 .mainBox {
   padding-bottom: 1rem;
   &__bottom {
@@ -6,21 +9,53 @@
   &__wrapper {
     justify-content: center;
     gap: 2rem;
+    @include smartPhone {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+    }
   }
   &__text {
-    font-size: 1rem;
-    line-height: 1.2rem;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    @include smartPhone {
+      font-size: 0.9rem;
+      line-height: 1.1rem;
+    }
+    @include tablet {
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
   }
   &__list {
     font-size: 1rem;
-    line-height: 1.3rem;
-    color: mainColor;
+    line-height: 1.2rem;
+    color: $mainColor;
+    @include smartPhone {
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
+    @include tablet {
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
   }
   &__item::marker {
-    color: mainColor;
+    color: $mainColor;
     font-size: 1rem;
     font-weight: 800;
     content: "» ";
+    @include smartPhone {
+      font-size: 0.8rem;
+    }
+    @include tablet {
+      font-size: 1rem;
+    }
   }
   &__quote {
     padding: 2rem 1rem 1rem 1rem;
@@ -28,11 +63,26 @@
     font-size: 2rem;
     color: $gray-500;
     text-align: center;
+    @include smartPhone {
+      font-size: 1.8rem;
+    }
+    @include tablet {
+      font-size: 2.2rem;
+    }
   }
   &__ytVideo {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+  &__video {
+    width: 100%;
+    @include smartPhone {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
   }
   &__contact {
     grid-area: container;
@@ -42,8 +92,5 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-  }
-  &__image {
-    width: 100%;
   }
 }

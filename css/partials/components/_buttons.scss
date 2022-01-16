@@ -1,9 +1,10 @@
 @import "../utilities/vars";
+@import "../utilities/mixinQueries";
 
 .btn {
   border: none;
   height: 2.5rem;
-  padding: 0 15px;
+  padding: 0.25rem;
   color: $white;
   border-radius: 4rem;
   text-decoration: none;
@@ -14,28 +15,63 @@
   position: absolute;
   right: 1rem;
   bottom: -1rem;
+  @include smartPhone {
+    font-size: 0.9rem;
+  }
+  @include tablet {
+    font-size: 1.2rem;
+  }
   &:hover {
     background-color: $secondaryColor;
     color: $white;
     text-decoration: none;
     transition: all 0.5s ease-out;
+    @include smartPhone {
+      background-color: $mainColor;
+      transition: none;
+    }
+    @include tablet {
+      background-color: $mainColor;
+      transition: none;
+    }
   }
   &--form {
     border: none;
     background-color: $mainColor;
     color: $white;
     height: 2rem;
-    padding: 0 15px;
+    padding: 0 0.25rem;
     border-radius: 0.25rem;
+    @include smartPhone {
+      padding: 0.25rem;
+      font-size: 0.9rem;
+    }
+    @include tablet {
+      font: normal 400 1.2rem sans-serif;
+    }
     &:hover {
-      background-color: $secondaryColor;      
+      background-color: $secondaryColor;
       color: $white;
       text-decoration: none;
       transition: all 0.5s ease-out;
+      @include smartPhone {
+        background-color: $mainColor;
+        transition: none;
+      }
+      @include tablet {
+        background-color: $mainColor;
+        transition: none;
+      }
     }
   }
   &__label {
     font-weight: 600;
     margin-right: 0.75rem;
+    @include smartPhone {
+      font-size: 0.9rem;
+    }
+    @include tablet {
+      font: normal 400 1.2rem sans-serif;
+    }
   }
 }

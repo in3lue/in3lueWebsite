@@ -1,4 +1,5 @@
 @import "../utilities/vars";
+@import "../utilities/mixinQueries";
 
 .form {
   &__wrapper {
@@ -7,6 +8,18 @@
     align-items: flex-start;
     gap: 1rem;
     padding: 2rem 0rem;
+    @include smartPhone {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 3rem;
+      width: 100%;
+    }
+    @include tablet {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+      width: 100%;
+    }
   }
   &__fieldset {
     padding: 1rem 2rem;
@@ -16,11 +29,26 @@
       padding: 0.25rem;
       font-size: 0.8rem;
       color: $gray-500;
+      @include smartPhone {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+      @include tablet {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+      }
     }
   }
   &__legend {
     font-size: 0.9rem;
     padding: 0.25rem 0.5rem;
+    @include smartPhone {
+      padding: 0.5rem;
+    }
+    @include tablet {
+      padding: 0.5rem;
+      font-size: 1.2rem;
+    }
   }
 
   &__legend::before {
@@ -34,6 +62,12 @@
     padding: 0.25rem;
     margin: 0.25rem;
     width: 100%;
+    @include smartPhone {
+      font: normal 400 0.9rem sans-serif;
+    }
+    @include tablet {
+      font: normal 400 1.2rem sans-serif;
+    }
   }
   &__textarea {
     border: 1px solid $gray-400;
@@ -43,5 +77,11 @@
     margin: 0.25rem;
     width: 100%;
     height: 8rem;
+    @include smartPhone {
+      font: normal 400 0.9rem sans-serif;
+    }
+    @include tablet {
+      font: normal 400 1.2rem sans-serif;
+    }
   }
 }

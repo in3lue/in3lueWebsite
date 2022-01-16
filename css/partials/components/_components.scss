@@ -1,4 +1,5 @@
 @import "../utilities/vars";
+@import "../utilities/mixinQueries";
 
 .breadcrumb {
   padding: 1rem;
@@ -18,12 +19,28 @@
   position: relative;
   width: 100%;
   &__title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: lowercase;
-    letter-spacing: 0rem;
+    letter-spacing: 0.1rem;
     color: $gray-500;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.1rem;
+    @include smartPhone {
+      font-size: 0.8rem;
+      letter-spacing: 0.1rem;
+      padding-left: 0.25rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+    @include tablet {
+      font-size: 0.9rem;
+      letter-spacing: 0.1rem;
+      padding-left: 0.25rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
   }
   &__title::before {
     content: "¤ ";
@@ -33,19 +50,39 @@
     letter-spacing: 0.25rem;
     text-transform: uppercase;
     color: $gray-600;
-    margin-bottom: 0.10rem;
+    margin-bottom: 0.1rem;
+    @include smartPhone {
+      margin-bottom: 0.15rem;
+    }
+    @include tablet {
+      margin-bottom: 0.15rem;
+    }
   }
   &__border {
-    border: 1px solid $gray-500;
+    border: 1px solid $gray-400;
     height: 8px;
     margin-bottom: 0.8rem;
   }
   &__fill {
-    background-color: rgba(219, 56, 22, 0.5);
+    background-color: $altColor;
+    opacity: 1;
     height: 8px;
+    @include smartPhone {
+      opacity: 0.5;
+    }
+    @include tablet {
+      opacity: 0.5;
+    }
     &--color {
-      background-color: rgba(219, 160, 22, 0.5);
+      background-color: $secondaryColor;
+      opacity: 1;
       height: 8px;
+      @include smartPhone {
+        opacity: 0.5;
+      }
+      @include tablet {
+        opacity: 0.5;
+      }
     }
   }
 }
@@ -53,10 +90,18 @@
   width: 100%;
   height: 50vh;
   background-image: url("../assets/imgs/para2.jpg");
-  background-position: center;
+  background-position: center ;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  @include smartPhone {
+    height: 40vh;
+    background-position: center top;
+  }
+  @include tablet {
+    height: 40vh;
+    background-position: center bottom;
+  }
 }
 .parallax2 {
   width: 100%;
@@ -66,11 +111,26 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  @include smartPhone {
+    height: 30vh;
+    background-position: right top;
+  }
+  @include tablet {
+    height: 30vh;
+    background-position: right top;
+  }
 }
 .networks {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  @include smartPhone {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: row;
@@ -88,6 +148,16 @@
     opacity: 0.5;
     margin: 0.5rem;
     font-size: 1.8rem;
+    @include smartPhone {
+      width: 80px;
+      opacity: 0.4;
+      font-size: 3rem;
+    }
+    @include tablet {
+      width: 80px;
+      opacity: 0.4;
+      font-size: 3rem;
+    }
     &:hover {
       opacity: 0.8;
     }

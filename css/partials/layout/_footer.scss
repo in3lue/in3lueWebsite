@@ -2,7 +2,7 @@
 @import "../utilities/mixinQueries";
 
 .footer {
-  background-image: url("../../../assets/views/footerBG.png");
+  background-image: url("../assets/views/footerBG.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -87,7 +87,7 @@
       font-size: 0.8rem;
     }
     &:hover {
-      background-image: url("../../../assets/views/menuBack.png") no-repeat center
+      background-image: url("../assets/views/menuBack.png") no-repeat center
         bottom;
       background-position: bottom center;
       background-repeat: no-repeat;

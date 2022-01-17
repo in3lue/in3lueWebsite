@@ -17,4 +17,4 @@ Personal portfolio - web - flexbox - grids - bootstrap
 -	Manejo de variables
 -	Organización de archivos Sass 
 -	No se declaró mapa ni utilicé map-get porque no se me ocurrió cómo y dónde aplicarlo.
--	Lo mismo con el sitemap
+-	Lo mismo con el sitemap (me falta contenido)

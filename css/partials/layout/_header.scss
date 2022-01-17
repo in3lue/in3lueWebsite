@@ -65,7 +65,7 @@
     }
     &:hover {
       color: $mainColor;
-      background-image: url("../assets/views/menuBack.png");
+      background-image: url("../../../assets/views/menuBack.png");
       background-position: bottom center;
       background-repeat: no-repeat;
       display: block;
@@ -81,7 +81,7 @@
   margin: 0.5rem;
   font-size: 1rem;
   color: $mainColor;
-  background-image: url("../assets/views/menuBack.png");
+  background-image: url("../../../assets/views/menuBack.png");
   background-position: bottom center;
   background-repeat: no-repeat;
   cursor: default;
@@ -123,7 +123,7 @@
       padding: 0.5rem;
     }
     &:hover {
-      background-image: $gray-200 url("../assets/views/submenuBack.png");
+      background-image: $gray-200 url("../../../assets/views/submenuBack.png");
       background-position: left center;
       background-repeat: no-repeat;
       color: $thirdColor;

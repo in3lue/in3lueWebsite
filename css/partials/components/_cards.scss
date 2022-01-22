@@ -1,135 +1,155 @@
 @import "../utilities/vars";
 @import "../utilities/mixinQueries";
-
 .card {
-  box-shadow: 1px 1px 1rem rgba(126, 126, 126, 0.2);
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  margin-bottom: 3rem;
-  @include smartPhone {
-    margin-bottom: 1rem;
-  }
-  @include tablet {
-    margin-bottom: 1rem;
-  }
-  &__thumbnail {
-    overflow: hidden;
-  }
-  &__wrapper {
-    justify-content: center;
-    align-content: center;
-    @include smartPhone {
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-      padding: 1rem;
-    }
-    @include tablet {
-      display: flex;
-      flex-direction: column;
-      gap: 2;
-      padding: 1rem;
-    }
-  }
-  &__title-L {
-    background-color: rgba(22, 28, 36, 0.3);
-    padding: 1rem;
-    position: absolute;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: $white;
-    text-shadow: 1px 1px 4px $gray-600;
-    border-radius: 0.5rem 0rem 0rem 0rem;
-    letter-spacing: 0.1rem;
-    @include smartPhone {
-      font-size: 0.8rem;
-    }
-    @include tablet {
-      font-size: 1.2rem;
-    }
-  }
-  &__image {
-    width: 100%;
+    box-shadow: 1px 1px 1rem rgba(126, 126, 126, 0.2);
     border-radius: 0.5rem;
-    border: $gray-200 1px solid;
-  }
-  &__description {
-    font-size: 1rem;
-    line-height: 1rem;
-    color: $gray-600;
-    margin: 0.5rem 1rem 1rem 1rem;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
     @include smartPhone {
-      font-size: 0.8rem;
-      line-height: 1rem;
+        margin-bottom: 1rem;
     }
     @include tablet {
-      font-size: 1.2rem;
-      line-height: 1.2rem;
+        margin-bottom: 1rem;
     }
-  }
+    &__thumbnail {
+        overflow: hidden;
+    }
+    &__wrapper {
+        justify-content: center;
+        align-content: center;
+        @include smartPhone {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            padding: 1rem;
+        }
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 1rem;
+        }
+    }
+    &__title-L {
+        background-color: rgba(22, 28, 36, 0.3);
+        padding: 1rem;
+        position: absolute;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: $white;
+        text-shadow: 1px 1px 4px $gray-600;
+        border-radius: 0.5rem 0rem 0rem 0rem;
+        letter-spacing: 0.1rem;
+        @include smartPhone {
+            font-size: 0.8rem;
+        }
+        @include tablet {
+            font-size: 1.2rem;
+        }
+    }
+    &__image {
+        width: 100%;
+        border-radius: 0.5rem;
+        border: $gray-200 1px solid;
+    }
+    &__description {
+        font-size: 1rem;
+        line-height: 1rem;
+        color: $gray-600;
+        margin: 0.5rem 1rem 1rem 1rem;
+        @include smartPhone {
+            font-size: 0.8rem;
+            line-height: 1rem;
+        }
+        @include tablet {
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+        }
+    }
 }
 
 .projects {
-  &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 1rem;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: $gap-size;
+        width: 100%;
+        justify-content: center;
+        &>div {
+            flex: 1 1 auto;
+            width: 300px;
+        }
+    }
+    &__card {
+        border-right: 1px dashed $gray-500;
+        padding: 0px 1rem 0px 0px;
+        @include smartPhone {
+            border-right: 0;
+        }
+        @include tablet {
+            border-right: 0;
+        }
+        &:last-child {
+            border-right: 0;
+        }
+    }
+    &__title-M {
+        font-weight: 900;
+        color: $altColor;
+        margin: 5px 0px;
+        font-size: 1.2rem;
+    }
+    &__description {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        margin: 0.5rem 1rem 1rem 1rem;
+        @include smartPhone {
+            font-size: 0.8rem;
+            margin: 0 0 0.25rem 0;
+        }
+        @include tablet {
+            font-size: 1.2rem;
+            margin: 0 0 0.25rem 0;
+        }
+    }
+    &__tags {
+        font-size: 0.8rem;
+        color: $secondaryColor;
+        border-top: 1px dashed $gray-500;
+        padding-top: 0.25rem;
+        @include smartPhone {
+            font-size: 0.8rem;
+            margin: 0.25rem 0;
+        }
+        @include tablet {
+            font-size: 1.2rem;
+            margin: 0.25rem 0;
+        }
+    }
+    &__image {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.gallery {
+    & img {
+        width: 100%;
+        height: 300px;
+        padding: 0.25rem;
+        background-color: $white;
+        box-shadow: 0 0 .9rem rgba(22, 28, 36, 0.3);
+        cursor: pointer;
+        object-fit: cover;
+    }
+}
+
+#gallery-modal .modal-img {
     width: 100%;
-    justify-content: center;
-    & > div {
-      flex: 1 1 auto;
-      width: 300px;
-    }
-  }
-  &__card {
-    border-right: 1px dashed $gray-500;
-    padding: 0px 1rem 0px 0px;
-    @include smartPhone {
-      border-right: 0;
-    }
-    @include tablet {
-      border-right: 0;
-    }
-    &:last-child {
-      border-right: 0;
-    }
-  }
-  &__title-M {
-    font-weight: 900;
-    color: $altColor;
-    margin: 5px 0px;
-    font-size: 1.2rem;
-  }
-  &__description {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-    margin: 0.5rem 1rem 1rem 1rem;
-    @include smartPhone {
-      font-size: 0.8rem;
-      margin: 0 0 0.25rem 0;
-    }
-    @include tablet {
-      font-size: 1.2rem;
-      margin: 0 0 0.25rem 0;
-    }
-  }
-  &__tags {
-    font-size: 0.8rem;
-    color: $secondaryColor;
-    border-top: 1px dashed $gray-500;
-    padding-top: 0.25rem;
-    @include smartPhone {
-      font-size: 0.8rem;
-      margin: 0.25rem 0;
-    }
-    @include tablet {
-      font-size: 1.2rem;
-      margin: 0.25rem 0;
-    }
-  }
-  &__image {
-    width: 100%;
-    overflow: hidden;
-  }
+    height: 100%;
 }

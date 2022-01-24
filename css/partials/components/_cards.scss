@@ -103,7 +103,7 @@
     &__description {
         font-size: 0.8rem;
         line-height: 1.2rem;
-        margin: 0.5rem 1rem 1rem 1rem;
+        margin: 0.5rem 1rem 0.5rem 0;
         @include smartPhone {
             font-size: 0.8rem;
             margin: 0 0 0.25rem 0;
@@ -130,6 +130,12 @@
     &__image {
         width: 100%;
         overflow: hidden;
+        filter: none;
+        &:hover {
+            width: 100%;
+            overflow: hidden;
+            filter: grayscale(100%) blur(3px);
+        }
     }
 }
 

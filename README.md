@@ -1,6 +1,24 @@
 # in3lueWebsite
 Personal portfolio - web - flexbox - grids - bootstrap
 
+  # TERCER ENTREGA DE PROYECTO FINAL
+  
+  ## Optimización
+  - de rutas
+  - de imágenes
+
+  ## Actualización de Contenido
+  - Galería de Imágenes (bootstrap) + main.js
+  - Enlaces de proyectos
+  
+  ##SEO
+  - sitemap
+  - Lighthouse Report
+
+
+![image](https://user-images.githubusercontent.com/90809728/150847368-7bdac538-f9d0-435c-88d7-967da25d4dc7.png)
+
+
 # DESAFÍO SASS II + SEO
 
 ## Adición de meta-names

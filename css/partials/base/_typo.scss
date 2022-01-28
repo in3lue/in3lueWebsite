@@ -2,81 +2,147 @@
 @import "../utilities/mixinQueries";
 .mainBox {
     &__title-XL {
-        font-size: 3rem;
+        font-size: 3em;
         letter-spacing: -0.15rem;
         font-weight: 900;
         color: $mainColor;
         text-align: center;
         text-transform: lowercase;
         margin-top: 5rem;
+        @include smartPhone {
+            font-size: 2em;
+            letter-spacing: -0.125rem;
+            margin-top: 2.5rem;
+            color: $secondaryColor;
+        }
+        @include lsPhone {
+            font-size: 2em;
+            letter-spacing: -0.13rem;
+            margin-top: 2.5rem;
+            color: $secondaryColor;
+        }
+        @include tablet {
+            font-size: 2.2em;
+            letter-spacing: -0.14rem;
+            margin-top: 3rem;
+            color: $secondaryColor;
+        }
+        @include lsTablet {
+            font-size: 2.5em;
+            letter-spacing: -0.14rem;
+            margin-top: 3rem;
+            color: $mainColor;
+        }
         &--main {
-            margin-top: 10rem;
+            margin-top: 8rem;
             @include smartPhone {
-                font-size: 2rem;
-                letter-spacing: -0.125rem;
+                margin-top: 4rem;
+            }
+            @include lsPhone {
                 margin-top: 5rem;
-                color: $secondaryColor;
             }
             @include tablet {
-                font-size: 2.2rem;
-                letter-spacing: -0.15rem;
-                margin-top: 5rem;
-                color: $secondaryColor;
+                margin-top: 6rem;
+            }
+            @include lsTablet {
+                margin-top: 7rem;
+            }
+            @include xLarge {
+                margin-top: 7rem;
             }
         }
         &--projects {
             margin-top: 5rem;
             color: $altColor;
             @include smartPhone {
-                font-size: 2rem;
+                font-size: 2em;
                 letter-spacing: -0.125rem;
-                margin-top: 3rem;
+                margin-top: 2.5rem;
+                color: $secondaryColor;
+            }
+            @include lsPhone {
+                font-size: 2em;
+                letter-spacing: -0.13rem;
+                margin-top: 2.5rem;
                 color: $secondaryColor;
             }
             @include tablet {
-                font-size: 2.2rem;
-                letter-spacing: -0.15rem;
+                font-size: 2.2em;
+                letter-spacing: -0.14rem;
                 margin-top: 3rem;
                 color: $secondaryColor;
+            }
+            @include lsTablet {
+                font-size: 2.5em;
+                letter-spacing: -0.14rem;
+                margin-top: 3rem;
+                color: $altColor;
             }
         }
         &--internal {
             margin-top: 1rem;
             color: $altColor;
             @include smartPhone {
-                font-size: 2rem;
+                font-size: 2em;
                 letter-spacing: -0.125rem;
-                margin-top: 1rem;
+                margin-top: 2.5rem;
+                color: $secondaryColor;
+            }
+            @include lsPhone {
+                font-size: 2em;
+                letter-spacing: -0.13rem;
+                margin-top: 2.5rem;
                 color: $secondaryColor;
             }
             @include tablet {
-                font-size: 2.2rem;
-                letter-spacing: -0.15rem;
-                margin-top: 1rem;
+                font-size: 2.2em;
+                letter-spacing: -0.14rem;
+                margin-top: 3rem;
+                color: $secondaryColor;
+            }
+            @include lsTablet {
+                font-size: 2.5em;
+                letter-spacing: -0.14rem;
+                margin-top: 3rem;
                 color: $secondaryColor;
             }
         }
     }
     &__title-L {
-        font-size: 1.25rem;
+        font-size: 1.25em;
         letter-spacing: 0.25rem;
         text-transform: uppercase;
         color: $gray-600;
         text-align: center;
         margin-bottom: 1rem;
         @include smartPhone {
-            font-size: 0.9rem;
+            font-size: 1em;
             letter-spacing: 0.10rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+        @include lsPhone {
+            font-size: 1em;
+            letter-spacing: 0.10rem;
+            margin-bottom: 0.25rem;
         }
         @include tablet {
-            font-size: 1.1rem;
-            letter-spacing: 0.15rem;
+            font-size: 1.15em;
+            letter-spacing: 0.125rem;
             margin-bottom: 0.5rem;
+        }
+        @include lsTablet {
+            font-size: 1.2em;
+            letter-spacing: 0.15rem;
+            margin-bottom: 0.75rem;
+        }
+        @include xLarge {
+            font-size: 1.25em;
+            letter-spacing: 0.20rem;
+            margin-bottom: 1rem;
         }
     }
     &__title-M {
-        font-size: 1.5rem;
+        font-size: 1.15em;
         color: $gray-600;
         padding-left: 1.25rem;
         margin-top: 4rem;
@@ -85,39 +151,66 @@
         background-position: left;
         background-repeat: no-repeat;
         text-align: left;
+        @include smartPhone {
+            font-size: 1em;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            padding-left: 0rem;
+            background: none;
+        }
+        @include lsPhone {
+            font-size: 1em;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            padding-left: 0rem;
+            background: none;
+        }
+        @include tablet {
+            font-size: 1em;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            padding-left: 0rem;
+            background: none;
+        }
+        @include lsTablet {
+            font-size: 1em;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            padding-left: 0rem;
+            background: none;
+        }
         &--child {
             padding-left: 1.25rem;
             margin-top: 0;
+            margin-bottom: 0.75rem;
             @include smartPhone {
-                font-size: 1rem;
-                margin-top: 0rem;
-                margin-bottom: 1rem;
+                font-size: 1em;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                padding-left: 0.5rem;
                 background: none;
-                text-align: left;
+            }
+            @include lsPhone {
+                font-size: 1em;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                padding-left: 0.5rem;
+                background: none;
             }
             @include tablet {
-                font-size: 1.2rem;
-                margin-top: 0rem;
-                margin-bottom: 1rem;
+                font-size: 1em;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                padding-left: 0.5rem;
                 background: none;
-                text-align: left;
             }
-        }
-        @include smartPhone {
-            font-size: 1rem;
-            padding-left: 0.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            background: none;
-            text-align: left;
-        }
-        @include tablet {
-            font-size: 1.2rem;
-            padding-left: 0.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            background: none;
-            text-align: left;
+            @include lsTablet {
+                font-size: 1em;
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                padding-left: 0.5rem;
+                background: none;
+            }
         }
     }
     &__title-S {
@@ -128,17 +221,85 @@
         margin-bottom: 0.75rem;
         text-align: left;
         @include smartPhone {
-            font-size: 1rem;
+            font-size: 1.25em;
+            margin-top: 0.25rem;
             margin-bottom: 1rem;
-            text-align: left;
+        }
+        @include lsPhone {
+            font-size: 1.25em;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
         }
         @include tablet {
-            font-size: 1.2rem;
+            font-size: 1.35em;
+            margin-top: 1rem;
             margin-bottom: 1rem;
-            text-align: left;
+        }
+        @include lsTablet {
+            font-size: 1.35em;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        &--child {
+            padding-left: 1.25rem;
+            margin-top: 0;
+        }
+        @include smartPhone {
+            font-size: 1.25em;
+            padding-left: 0.5rem;
+            margin-top: 2rem;
+            margin-top: 1rem;
+        }
+        @include lsPhone {
+            ffont-size: 1.25em;
+            padding-left: 0.5rem;
+            margin-top: 2rem;
+            margin-top: 1rem;
+        }
+        @include tablet {
+            font-size: 1.35em;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        @include lsTablet {
+            font-size: 1.35em;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
     }
     &__title-S::before {
         content: "\\\\ ";
+    }
+    &__title-WIP {
+        font-size: 1em;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        color: $gray-500;
+        text-align: center;
+        margin-bottom: 1rem;
+        @include smartPhone {
+            font-size: 1em;
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+            background: none;
+        }
+        @include lsPhone {
+            font-size: 1em;
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+            background: none;
+        }
+        @include tablet {
+            font-size: 1em;
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+            background: none;
+        }
+        @include lsTablet {
+            font-size: 1em;
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+            background: none;
+        }
     }
 }

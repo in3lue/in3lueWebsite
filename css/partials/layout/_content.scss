@@ -1,96 +1,101 @@
 @import "../utilities/vars";
 @import "../utilities/mixinQueries";
-
 .mainBox {
-  padding-bottom: 1rem;
-  &__bottom {
-    padding-bottom: 0;
-  }
-  &__wrapper {
-    justify-content: center;
-    gap: 2rem;
-    @include smartPhone {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+    padding-bottom: 1rem;
+    &__bottom {
+        padding-bottom: 0;
     }
-    @include tablet {
-      display: flex;
-      flex-direction: column;
-      gap: 5rem;
+    &__wrapper {
+        justify-content: center;
+        gap: 2rem;
+        @include smartPhone {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
     }
-  }
-  &__text {
-    font-size: 0.9rem;
-    line-height: 1.1rem;
-    @include smartPhone {
-      font-size: 0.9rem;
-      line-height: 1.1rem;
+    &__text {
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        @include smartPhone {
+            font-size: 0.9rem;
+            line-height: 1.1rem;
+        }
+        @include tablet {
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
     }
-    @include tablet {
-      font-size: 1rem;
-      line-height: 1.2rem;
+    &__list {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        color: $mainColor;
+        @include smartPhone {
+            font-size: 0.8rem;
+            line-height: 1rem;
+        }
+        @include tablet {
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
     }
-  }
-  &__list {
-    font-size: 1rem;
-    line-height: 1.2rem;
-    color: $mainColor;
-    @include smartPhone {
-      font-size: 0.8rem;
-      line-height: 1rem;
+    &__item::marker {
+        color: $mainColor;
+        font-size: 1rem;
+        font-weight: 800;
+        content: "» ";
+        @include smartPhone {
+            font-size: 0.8rem;
+        }
+        @include tablet {
+            font-size: 1rem;
+        }
     }
-    @include tablet {
-      font-size: 1rem;
-      line-height: 1.2rem;
+    &__quote {
+        padding: 2rem 1rem 1rem 1rem;
+        font-style: italic;
+        font-size: 2rem;
+        color: $gray-500;
+        text-align: center;
+        @include smartPhone {
+            font-size: 1rem;
+        }
+        @include lsPhone {
+            font-size: 1.25rem;
+        }
+        @include tablet {
+            font-size: 1.5rem;
+        }
+        @include lsTablet {
+            font-size: 1.75rem;
+        }
     }
-  }
-  &__item::marker {
-    color: $mainColor;
-    font-size: 1rem;
-    font-weight: 800;
-    content: "» ";
-    @include smartPhone {
-      font-size: 0.8rem;
+    &__ytVideo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
-    @include tablet {
-      font-size: 1rem;
+    &__video {
+        width: 100%;
+        @include smartPhone {
+            display: none;
+        }
+        @include lsPhone {
+            display: none;
+        }
     }
-  }
-  &__quote {
-    padding: 2rem 1rem 1rem 1rem;
-    font-style: italic;
-    font-size: 2rem;
-    color: $gray-500;
-    text-align: center;
-    @include smartPhone {
-      font-size: 1.8rem;
+    &__contact {
+        grid-area: container;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
     }
-    @include tablet {
-      font-size: 2.2rem;
-    }
-  }
-  &__ytVideo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  &__video {
-    width: 100%;
-    @include smartPhone {
-      display: none;
-    }
-    @include tablet {
-      display: none;
-    }
-  }
-  &__contact {
-    grid-area: container;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
 }

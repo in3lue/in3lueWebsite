@@ -1,6 +1,6 @@
 @import "../utilities/vars";
 @import "../utilities/mixinQueries";
-h2 {
+.sticky__title-L {
     margin: 0 0 1.1rem 0;
     font-size: 10em;
     font-family: system-ui;
@@ -22,7 +22,7 @@ h2 {
     }
 }
 
-h3 {
+.sticky__title-M {
     font-size: 1.3em;
     font-weight: bold;
     color: $gray-500;
@@ -45,7 +45,7 @@ h3 {
     }
 }
 
-h3 span {
+.sticky__title-M span {
     font-weight: normal;
     color: $gray-400;
     @include smartPhone {
@@ -59,7 +59,7 @@ h3 span {
     }
 }
 
-blockquote {
+.sticky__quote {
     font-size: 1.25em;
     text-align: right;
     @include smartPhone {
@@ -73,7 +73,7 @@ blockquote {
     }
 }
 
-h4 {
+.sticky__title-S {
     font-size: 1.2em;
     font-weight: bold;
     color: $gray-500;
@@ -81,12 +81,12 @@ h4 {
     margin: 0 0 .25rem 0;
 }
 
-h4 span {
+.sticky__title-S span {
     font-weight: normal;
     color: $gray-400;
 }
 
-h5 {
+.sticky__title-XS {
     font-size: 1em;
     font-weight: bold;
     color: $gray-600;
@@ -111,7 +111,7 @@ div .content {
     }
 }
 
-div .content p {
+div .content .sticky__text {
     font-size: .95em;
     padding-left: 0.5rem;
     color: $gray-700;
@@ -217,7 +217,7 @@ div .content p {
     }
 }
 
-div .index p {
+div .index .sticky__subTitle {
     text-align: right;
     font-size: 0.9em;
     text-transform: uppercase;
@@ -244,7 +244,7 @@ div .index p {
     @include lsTablet {
         flex-direction: column;
         flex-wrap: nowrap;
-        text-align: center;
+        text-align: right;
         margin-bottom: 1rem;
     }
 }

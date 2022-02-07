@@ -76,8 +76,6 @@
         }
     }
     &__ytVideo {
-        display: flex;
-        flex-direction: column;
         width: 100%;
         @include smartPhone {
             display: none;

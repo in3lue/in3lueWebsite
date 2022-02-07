@@ -79,6 +79,15 @@
     color: $gray-500;
     letter-spacing: -0.075rem;
     margin: 0 0 .25rem 0;
+    @include smartPhone {
+        font-size: 1.2em;
+    }
+    @include lsPhone {
+        font-size: 1.2em;
+    }
+    @include tablet {
+        font-size: 1.2em;
+    }
 }
 
 .sticky__title-S span {
@@ -93,6 +102,15 @@
     letter-spacing: 0.075rem;
     margin: 0 0 .15rem 0;
     padding-left: 0.5rem;
+    @include smartPhone {
+        font-size: 1em;
+    }
+    @include lsPhone {
+        font-size: 1em;
+    }
+    @include tablet {
+        font-size: 1em;
+    }
 }
 
 div .content {

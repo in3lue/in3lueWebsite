@@ -103,3 +103,36 @@
         gap: 2rem;
     }
 }
+
+.valGallery {
+    columns: 6 100px;
+    column-gap: 1em;
+    @include smartPhone {
+        columns: 1 100px;
+    }
+    @include lsPhone {
+        columns: 2 100px;
+    }
+    @include tablet {
+        columns: 2 100px;
+    }
+    @include lsTablet {
+        columns: 3 100px;
+    }
+    @include xLarge {
+        columns: 4 100px;
+    }
+    &__img {
+        max-width: 100%;
+        margin-bottom: 1em;
+        display: block;
+        outline: 1px $gray-300 solid;
+        border-radius: 1rem;
+        box-shadow: 0px 1px .5rem rgba(126, 126, 126, 0.2);
+        filter: none;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(126, 126, 126, 0.1);
+        }
+    }
+}

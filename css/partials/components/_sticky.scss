@@ -1,369 +1,373 @@
-            @import "../utilities/vars";
-            @import "../utilities/mixinQueries";
-            .sticky__title-L {
-                margin: 0 0 1.1rem 0;
-                font-size: 10em;
-                font-family: system-ui;
-                font-weight: bold;
-                text-align: right;
-                color: $gray-400;
-                line-height: 6rem;
-                @include smartPhone {
-                    margin: 0 0 .5rem 0;
-                    text-align: center;
-                }
-                @include lsPhone {
-                    margin: 0 0 .5rem 0;
-                    text-align: center;
-                }
-                @include tablet {
-                    margin: 0 0 .5rem 0;
-                    text-align: center;
-                }
+@import "../utilities/vars";
+@import "../utilities/mixinQueries";
+.sticky__title-L {
+    margin: 0 0 1.1rem 0;
+    font-size: 10em;
+    font-family: system-ui;
+    font-weight: bold;
+    text-align: right;
+    color: $gray-400;
+    line-height: 6rem;
+    @include smartPhone {
+        margin: 0 0 0.5rem 0;
+        text-align: center;
+    }
+    @include lsPhone {
+        margin: 0 0 0.5rem 0;
+        text-align: center;
+    }
+    @include tablet {
+        margin: 0 0 0.5rem 0;
+        text-align: center;
+    }
+}
+
+.sticky__title-M {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $gray-500;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.25em 0;
+    @include smartPhone {
+        margin: 0 0 0.5rem 0;
+        letter-spacing: -0.025em;
+        text-align: right;
+    }
+    @include lsPhone {
+        margin: 0 0 0.5rem 0;
+        letter-spacing: -0.025em;
+        text-align: right;
+    }
+    @include tablet {
+        margin: 0 0 0.5rem 0;
+        letter-spacing: -0.025em;
+        text-align: right;
+    }
+}
+
+.sticky__title-M span {
+    font-weight: normal;
+    color: $gray-500;
+    @include smartPhone {
+        color: $gray-500;
+    }
+    @include lsPhone {
+        color: $gray-500;
+    }
+    @include tablet {
+        color: $gray-500;
+    }
+}
+
+.sticky__quote {
+    font-size: 1.25em;
+    text-align: right;
+    @include smartPhone {
+        text-align: center;
+    }
+    @include lsPhone {
+        text-align: center;
+    }
+    @include tablet {
+        text-align: center;
+    }
+}
+
+.sticky__title-S {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $gray-500;
+    letter-spacing: -0.05rem;
+    margin: 0 0 0.25rem 0;
+    @include smartPhone {
+        font-size: 1.2em;
+    }
+    @include lsPhone {
+        font-size: 1.2em;
+    }
+    @include tablet {
+        font-size: 1.2em;
+    }
+}
+
+.sticky__title-S span {
+    font-weight: normal;
+    color: $gray-400;
+}
+
+.sticky__title-XS {
+    font-size: 1em;
+    font-weight: bold;
+    color: $gray-600;
+    letter-spacing: 0.075rem;
+    margin: 0 0 0.15rem 0;
+    padding-left: 0.5rem;
+    @include smartPhone {
+        font-size: 1em;
+    }
+    @include lsPhone {
+        font-size: 1em;
+    }
+    @include tablet {
+        font-size: 1em;
+    }
+}
+
+div .content {
+    min-width: 80%;
+    @include smartPhone {
+        width: 100%;
+    }
+    @include lsPhone {
+        width: 100%;
+    }
+    @include tablet {
+        width: 100%;
+    }
+    @include lsTablet {
+        width: 100%;
+    }
+}
+
+div .content .sticky__text {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    color: $gray-700;
+}
+
+
+/* layout */
+
+.sticky {
+    &__wrapper {
+        width: 60%;
+        margin: 0 auto 1rem auto;
+        @include smartPhone {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        @include lsPhone {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        @include tablet {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        @include lsTablet {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        @include xLarge {
+            width: 80%;
+            margin-bottom: 1rem;
+        }
+    }
+    &__section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        @include smartPhone {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        @include lsPhone {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        @include tablet {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        &>div {
+            flex: 1 1 auto;
+        }
+        &>div.index {
+            position: sticky;
+            top: 10rem;
+            flex: 0 1 20rem;
+            min-width: 20%;
+            padding: 0 1rem;
+            @include smartPhone {
+                position: relative;
+                top: auto;
+                flex: 0 0 0;
+                width: 100%;
+                padding: 0.75rem;
             }
-            
-            .sticky__title-M {
-                font-size: 1.2em;
-                font-weight: bold;
-                color: $gray-500;
-                letter-spacing: -0.025em;
-                margin: 0 0 .25em 0;
-                @include smartPhone {
-                    margin: 0 0 .5rem 0;
-                    letter-spacing: -0.025em;
-                    text-align: right;
-                }
-                @include lsPhone {
-                    margin: 0 0 .5rem 0;
-                    letter-spacing: -0.025em;
-                    text-align: right;
-                }
-                @include tablet {
-                    margin: 0 0 .5rem 0;
-                    letter-spacing: -0.025em;
-                    text-align: right;
-                }
+            @include lsPhone {
+                position: relative;
+                top: auto;
+                flex: 0 0 0;
+                width: 100%;
+                padding: 0.75rem;
             }
-            
-            .sticky__title-M span {
-                font-weight: normal;
-                color: $gray-500;
-                @include smartPhone {
-                    color: $gray-500;
-                }
-                @include lsPhone {
-                    color: $gray-500;
-                }
-                @include tablet {
-                    color: $gray-500;
-                }
+            @include tablet {
+                position: relative;
+                top: auto;
+                width: 100%;
+                flex: 0 0 0;
+                padding: 0.75rem;
             }
-            
-            .sticky__quote {
-                font-size: 1.25em;
-                text-align: right;
-                @include smartPhone {
-                    text-align: center;
-                }
-                @include lsPhone {
-                    text-align: center;
-                }
-                @include tablet {
-                    text-align: center;
-                }
+            @include lsTablet {
+                position: relative;
+                top: auto;
+                width: 100%;
+                flex: 0 0 0;
+                padding: 0.75rem;
             }
-            
-            .sticky__title-S {
-                font-size: 1.2em;
-                font-weight: bold;
-                color: $gray-500;
-                letter-spacing: -0.05rem;
-                margin: 0 0 .25rem 0;
-                @include smartPhone {
-                    font-size: 1.2em;
-                }
-                @include lsPhone {
-                    font-size: 1.2em;
-                }
-                @include tablet {
-                    font-size: 1.2em;
-                }
+            @include xLarge {
+                position: sticky;
+                top: 8rem;
             }
-            
-            .sticky__title-S span {
-                font-weight: normal;
-                color: $gray-400;
+        }
+    }
+}
+
+div .index {
+    &__subTitle {
+        text-align: right;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+        color: $gray-600;
+        margin-bottom: 1rem;
+        @include smartPhone {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        @include lsPhone {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        @include tablet {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        @include lsTablet {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            text-align: right;
+            margin-bottom: 1rem;
+        }
+    }
+    &__title-M {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $gray-500;
+        letter-spacing: -0.075em;
+        margin: 0 0 0.25em 1.9rem;
+        text-align: left;
+        color: $mainColor;
+        @include smartPhone {
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.025em;
+            text-align: center;
+        }
+        @include lsPhone {
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.025em;
+            text-align: center;
+        }
+        @include tablet {
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.025em;
+            text-align: left;
+        }
+    }
+    &__list {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        color: $gray-500;
+        @include smartPhone {
+            font-size: 0.8rem;
+            line-height: 1rem;
+        }
+        @include tablet {
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
+    }
+    &__item::marker {
+        color: $mainColor;
+        font-size: 1rem;
+        font-weight: 800;
+        content: "» ";
+        @include smartPhone {
+            font-size: 0.8rem;
+        }
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+    &__link {
+        font-size: 0.9rem;
+        line-height: 1rem;
+        text-decoration: none;
+        color: $gray-500;
+        @include smartPhone {
+            font-size: 0.8rem;
+            line-height: 1rem;
+        }
+        @include tablet {
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
+        &:hover {
+            font-size: 0.9rem;
+            line-height: 1rem;
+            text-decoration: none;
+            color: $gray-700;
+            @include smartPhone {
+                font-size: 0.8rem;
+                line-height: 1rem;
             }
-            
-            .sticky__title-XS {
-                font-size: 1em;
-                font-weight: bold;
-                color: $gray-600;
-                letter-spacing: 0.075rem;
-                margin: 0 0 .15rem 0;
-                padding-left: 0.5rem;
-                @include smartPhone {
-                    font-size: 1em;
-                }
-                @include lsPhone {
-                    font-size: 1em;
-                }
-                @include tablet {
-                    font-size: 1em;
-                }
-            }
-            
-            div .content {
-                min-width: 80%;
-                @include smartPhone {
-                    width: 100%;
-                }
-                @include lsPhone {
-                    width: 100%;
-                }
-                @include tablet {
-                    width: 100%;
-                }
-                @include lsTablet {
-                    width: 100%;
-                }
-            }
-            
-            div .content .sticky__text {
+            @include tablet {
                 font-size: 1rem;
-                padding-left: 0.5rem;
-                color: $gray-700;
+                line-height: 1.2rem;
             }
-            /* layout */
-            
-            .sticky {
-                &__wrapper {
-                    width: 60%;
-                    margin: 0 auto 1rem auto;
-                    @include smartPhone {
-                        width: 100%;
-                        margin-bottom: 1rem;
-                    }
-                    @include lsPhone {
-                        width: 100%;
-                        margin-bottom: 1rem;
-                    }
-                    @include tablet {
-                        width: 100%;
-                        margin-bottom: 1rem;
-                    }
-                    @include lsTablet {
-                        width: 100%;
-                        margin-bottom: 1rem;
-                    }
-                    @include xLarge {
-                        width: 80%;
-                        margin-bottom: 1rem;
-                    }
-                }
-                &__section {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                    position: relative;
-                    @include smartPhone {
-                        flex-direction: column;
-                        flex-wrap: nowrap;
-                        align-content: center;
-                        align-items: center;
-                        margin-bottom: 1rem;
-                    }
-                    @include lsPhone {
-                        flex-direction: column;
-                        flex-wrap: nowrap;
-                        align-content: center;
-                        align-items: center;
-                        margin-bottom: 1rem;
-                    }
-                    @include tablet {
-                        flex-direction: column;
-                        flex-wrap: nowrap;
-                        align-content: center;
-                        align-items: center;
-                        margin-bottom: 1rem;
-                    }
-                    &>div {
-                        flex: 1 1 auto;
-                    }
-                    &>div.index {
-                        position: sticky;
-                        top: 10rem;
-                        flex: 0 1 20rem;
-                        min-width: 20%;
-                        padding: 0 1rem;
-                        @include smartPhone {
-                            position: relative;
-                            top: auto;
-                            flex: 0 1 8rem;
-                            width: 100%;
-                            padding: 0.75rem;
-                        }
-                        @include lsPhone {
-                            position: relative;
-                            top: auto;
-                            flex: 0 1 8rem;
-                            width: 100%;
-                            padding: 0.75rem;
-                        }
-                        @include tablet {
-                            position: relative;
-                            top: auto;
-                            width: 100%;
-                            flex: 0 1 8rem;
-                            padding: 0.75rem;
-                        }
-                        @include lsTablet {
-                            position: relative;
-                            top: auto;
-                            width: 100%;
-                            flex: 0 1 8rem;
-                            padding: 0.75rem;
-                        }
-                        @include xLarge {
-                            position: sticky;
-                            top: 8rem;
-                        }
-                    }
-                }
-            }
-            
-            div .index .sticky__subTitle {
-                text-align: right;
-                font-size: 1rem;
-                text-transform: uppercase;
-                letter-spacing: -0.02em;
-                color: $gray-600;
-                margin-bottom: 1rem;
-                @include smartPhone {
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    text-align: center;
-                    margin-bottom: 1rem;
-                }
-                @include lsPhone {
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    text-align: center;
-                    margin-bottom: 1rem;
-                }
-                @include tablet {
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    text-align: center;
-                    margin-bottom: 1rem;
-                }
-                @include lsTablet {
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    text-align: right;
-                    margin-bottom: 1rem;
-                }
-            }
-            
-            .index {
-                &__title-M {
-                    font-size: 1.2rem;
-                    font-weight: bold;
-                    color: $gray-500;
-                    letter-spacing: -0.075em;
-                    margin: 0 0 .25em 1.9rem;
-                    text-align: left;
-                    color: $mainColor;
-                    @include smartPhone {
-                        margin: 0 0 .5rem 0;
-                        letter-spacing: -0.025em;
-                        text-align: center;
-                    }
-                    @include lsPhone {
-                        margin: 0 0 .5rem 0;
-                        letter-spacing: -0.025em;
-                        text-align: center;
-                    }
-                    @include tablet {
-                        margin: 0 0 .5rem 0;
-                        letter-spacing: -0.025em;
-                        text-align: left;
-                    }
-                }
-                &__list {
-                    font-size: 1rem;
-                    line-height: 1.2rem;
-                    color: $gray-500;
-                    @include smartPhone {
-                        font-size: 0.8rem;
-                        line-height: 1rem;
-                    }
-                    @include tablet {
-                        font-size: 1rem;
-                        line-height: 1.2rem;
-                    }
-                }
-                &__item::marker {
-                    color: $mainColor;
-                    font-size: 1rem;
-                    font-weight: 800;
-                    content: "» ";
-                    @include smartPhone {
-                        font-size: 0.8rem;
-                    }
-                    @include tablet {
-                        font-size: 1rem;
-                    }
-                }
-                &__link {
-                    font-size: .9rem;
-                    line-height: 1rem;
-                    text-decoration: none;
-                    color: $gray-500;
-                    @include smartPhone {
-                        font-size: 0.8rem;
-                        line-height: 1rem;
-                    }
-                    @include tablet {
-                        font-size: 1rem;
-                        line-height: 1.2rem;
-                    }
-                    &:hover {
-                        font-size: .9rem;
-                        line-height: 1rem;
-                        text-decoration: none;
-                        color: $gray-700;
-                        @include smartPhone {
-                            font-size: 0.8rem;
-                            line-height: 1rem;
-                        }
-                        @include tablet {
-                            font-size: 1rem;
-                            line-height: 1.2rem;
-                        }
-                    }
-                }
-                /* hover */
-                article {
-                    transition: background-color 1s;
-                    transition-timing-function: background-color ease-out;
-                    border-bottom: 1px solid $gray-600;
-                    padding: 1rem 0;
-                    @include smartPhone {
-                        padding: 1rem;
-                    }
-                    @include lsPhone {
-                        padding: 1rem;
-                    }
-                    @include tablet {
-                        padding: 1rem;
-                    }
-                    @include lsTablet {
-                        padding: 1rem;
-                    }
-                    &:hover {
-                        background-color: rgba(0, 0, 0, 0.1);
-                    }
-                }
-            }
+        }
+    }
+}
+
+
+/* hover */
+
+article {
+    transition: background-color 1s;
+    transition-timing-function: background-color ease-out;
+    border-bottom: 1px solid $gray-400;
+    padding: 1rem 0;
+    @include smartPhone {
+        padding: 1rem 0;
+    }
+    @include lsPhone {
+        padding: 1rem 0;
+    }
+    @include tablet {
+        padding: 1rem 0;
+    }
+    @include lsTablet {
+        padding: 1rem 0;
+    }
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}

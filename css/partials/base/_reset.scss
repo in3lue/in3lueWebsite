@@ -1,0 +1,71 @@
+@import "../utilities/vars";
+@import "../utilities/mixinQueries";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --interval: 0.2s;
+}
+
+.o1 {
+    -webkit-animation-delay: calc(var(--interval) * 1);
+    animation-delay: calc(var(--interval) * 1);
+}
+
+.o2 {
+    -webkit-animation-delay: calc(var(--interval) * 2);
+    animation-delay: calc(var(--interval) * 2);
+}
+
+.o3 {
+    -webkit-animation-delay: calc(var(--interval) * 3);
+    animation-delay: calc(var(--interval) * 3);
+}
+
+.o4 {
+    -webkit-animation-delay: calc(var(--interval) * 4);
+    animation-delay: calc(var(--interval) * 4);
+}
+
+.o5 {
+    -webkit-animation-delay: calc(var(--interval) * 5);
+    animation-delay: calc(var(--interval) * 5);
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: $lightColor;
+    background-image: url("../assets/views/bodyBG.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    color: $gray-800;
+    margin: 0px auto;
+    @include smartPhone {
+        font-size: 0.75em;
+    }
+    @include lsPhone {
+        font-size: 0.75em;
+    }
+    @include tablet {
+        font-size: 0.8em;
+    }
+    @include lsTablet {
+        font-size: 0.8em;
+    }
+    @include xLarge {
+        font-size: 1em;
+    }
+    @include xxLarge {
+        font-size: 1em;
+    }
+}

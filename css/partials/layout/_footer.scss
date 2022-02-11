@@ -1,0 +1,116 @@
+@import "../utilities/vars";
+@import "../utilities/mixinQueries";
+
+.footer {
+  background-image: url("../assets/views/footerBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 3rem;
+  align-content: center;
+  @include smartPhone {
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  @include tablet {
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  &__data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+    align-content: center;
+    @include smartPhone {
+      width: 100%;
+      justify-content: space-between;
+    }
+    @include tablet {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  &__text {
+    font-size: 1rem;
+    text-align: center;
+    color: $gray-200;
+    margin: 0px;
+    @include smartPhone {
+      font-size: 0.8rem;
+    }
+    @include tablet {
+      font-size: 0.8rem;
+    }
+  }
+  &__list {
+    list-style: none;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    margin: 1rem 0rem;
+  }
+  &__network {
+    display: flex;
+    flex-direction: row;
+  }
+  &__select {
+    background: transparent;
+    border: none;
+    padding: 1rem;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: $gray-600;
+    cursor: pointer;
+    @include smartPhone {
+      padding: 0.25rem;
+      font-size: 0.8rem;
+    }
+    @include tablet {
+      padding: 0.25rem;
+      font-size: 0.8rem;
+    }
+    &:hover {
+      background-image: url("../assets/views/menuBack.png") no-repeat center
+        bottom;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+    }
+  }
+  &__netIcon {
+    width: 40px;
+    color: $gray-400;
+    margin: 0.5rem;
+    opacity: 0.4;
+    font-size: 1.5rem;
+    @include smartPhone {
+      width: 25px;
+      font-size: 1.25rem;
+      opacity: 0.8;
+    }
+    @include tablet {
+      width: 30px;
+      font-size: 1.3rem;
+      opacity: 0.8;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

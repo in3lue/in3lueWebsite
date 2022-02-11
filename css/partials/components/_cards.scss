@@ -1,0 +1,215 @@
+    @import "../utilities/vars";
+    @import "../utilities/mixinQueries";
+    .card {
+        box-shadow: 1px 1px 1rem rgba(126, 126, 126, 0.2);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin-bottom: 3rem;
+        @include smartPhone {
+            margin-bottom: 1rem;
+        }
+        @include lsPhone {
+            margin-bottom: 1rem;
+        }
+        @include tablet {
+            margin-bottom: 1.5rem;
+        }
+        @include lsTablet {
+            margin-bottom: 1.5rem;
+        }
+        @include xLarge {
+            margin-bottom: 2rem;
+        }
+        &__thumbnail {
+            overflow: hidden;
+        }
+        &__wrapper {
+            justify-content: space-evenly;
+            align-content: center;
+            @include smartPhone {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                padding: 1rem;
+            }
+            @include lsPhone {
+                display: flex;
+                flex-direction: column;
+                gap: 2.5rem;
+                padding: 1rem;
+            }
+            @include tablet {
+                margin-bottom: 1.5rem;
+            }
+            @include lsTablet {
+                margin-bottom: 1.5rem;
+            }
+            @include xLarge {
+                margin-bottom: 2rem;
+            }
+        }
+        &__title-L {
+            background-color: rgba(22, 28, 36, 0.3);
+            padding: 1rem;
+            position: absolute;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: $white;
+            text-shadow: 1px 1px 3px $gray-800;
+            border-radius: 0.5rem 0rem 0rem 0rem;
+            letter-spacing: 0.1rem;
+            @include smartPhone {
+                font-size: 1em;
+            }
+            @include lsPhone {
+                font-size: 1em;
+            }
+            @include tablet {
+                font-size: 1em;
+            }
+            @include lsTablet {
+                font-size: 1em;
+            }
+            @include xLarge {
+                font-size: 1em;
+            }
+        }
+        &__image {
+            width: 100%;
+            border-radius: 0.5rem;
+            border: $gray-200 1px solid;
+        }
+        &__description {
+            font-size: 1em;
+            line-height: 1rem;
+            color: $gray-600;
+            margin: 0.5rem 1rem 1rem 1rem;
+            @include smartPhone {
+                font-size: 1em;
+            }
+            @include lsPhone {
+                font-size: 1em;
+            }
+            @include tablet {
+                font-size: 1em;
+            }
+            @include lsTablet {
+                font-size: 1em;
+            }
+            @include xLarge {
+                font-size: 1em;
+            }
+        }
+    }
+    
+    .projects {
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: $gap-size;
+            width: 100%;
+            justify-content: center;
+        }
+        &__card {
+            border-right: 1px dashed $gray-500;
+            @include smartPhone {
+                border-right: 0;
+            }
+            @include lsPhone {
+                border-right: 0;
+            }
+            @include tablet {
+                border-right: 0;
+            }
+            @include lsTablet {
+                border-right: 0;
+            }
+            &:last-child {
+                border-right: 0;
+            }
+        }
+        &__title-M {
+            font-weight: 900;
+            color: $altColor;
+            margin: 5px 0px;
+            font-size: 1rem;
+        }
+        &__description {
+            font-size: 0.8em;
+            line-height: 1rem;
+            margin: 0.5rem 1rem 0.5rem 0;
+            @include smartPhone {
+                font-size: 1em;
+                margin: 0 0 0.25rem 0;
+            }
+            @include lsPhone {
+                font-size: 1em;
+                margin: 0 0 0.25rem 0;
+            }
+            @include tablet {
+                font-size: 1em;
+                margin: 0 0 0.25rem 0;
+            }
+            @include lsTablet {
+                font-size: 1em;
+                margin: 0 0 0.25rem 0;
+            }
+            @include xLarge {
+                font-size: 1em;
+                margin: 0 0 0.25rem 0;
+            }
+        }
+        &__tags {
+            font-size: 0.8em;
+            color: $secondaryColor;
+            border-top: 1px dashed $gray-500;
+            padding-top: 0.25rem;
+            @include smartPhone {
+                font-size: 1em;
+                margin: 0.25rem 0;
+            }
+            @include lsPhone {
+                font-size: 1em;
+                margin: 0.25rem 0;
+            }
+            @include tablet {
+                font-size: 1em;
+                margin: 0.25rem 0;
+            }
+            @include lsTablet {
+                font-size: 1em;
+                margin: 0.25rem 0;
+            }
+        }
+        &__image {
+            width: 100%;
+            overflow: hidden;
+            filter: none;
+            &:hover {
+                width: 100%;
+                overflow: hidden;
+                filter: grayscale(100%) blur(3px);
+            }
+        }
+    }
+    
+    // img {
+    //     width: 100%;
+    // }
+    .gallery {
+        & img {
+            width: 100%;
+            height: 300px;
+            padding: 0.25rem;
+            background-color: $white;
+            box-shadow: 0 0 .9rem rgba(22, 28, 36, 0.3);
+            cursor: pointer;
+            object-fit: cover;
+            overflow: hidden;
+        }
+    }
+    
+    #gallery-modal .modal-img {
+        width: 100%;
+    }

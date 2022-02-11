@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
 $mainColor: #007890;
 $secondaryColor: #db3816;
 $altColor: #dba016;
@@ -6,7 +7,10 @@ $fourthColor: #8f6607;
 $lightColor: #f1f1f1;
 $image-size: 200px;
 $gap-size: 1rem;
-$breakpoints: ( "small": 320px, "medium": 768px, "large": 1024px, );
+$breakpoints: ( "small": 320px,
+"medium": 768px,
+"large": 1024px,
+);
 $white: #fff;
 $gray-100: #f9fafb;
 $gray-200: #f4f6f8;

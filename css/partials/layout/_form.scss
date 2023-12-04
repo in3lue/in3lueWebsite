@@ -1,5 +1,6 @@
 @import "../utilities/vars";
 @import "../utilities/mixinQueries";
+
 .form {
     &__wrapper {
         display: flex;
@@ -7,12 +8,14 @@
         align-items: flex-start;
         gap: 1rem;
         padding: 2rem 0rem;
+
         @include smartPhone {
             flex-direction: column;
             align-items: stretch;
             gap: 3rem;
             width: 100%;
         }
+
         @include tablet {
             flex-direction: column;
             align-items: stretch;
@@ -20,38 +23,47 @@
             width: 100%;
         }
     }
+
     &__fieldset {
         padding: 1rem 2rem;
         border: 1px solid $gray-400;
         border-radius: 0.25rem;
+
         &>div {
             padding: 0.25rem;
             font-size: 0.8em;
             color: $gray-500;
+
             @include smartPhone {
                 padding: 0.5rem;
                 font-size: 0.9em;
             }
+
             @include tablet {
                 padding: 0.5rem;
                 font-size: 1em;
             }
         }
     }
+
     &__legend {
         font-size: 0.9em;
         padding: 0.25rem 0.5rem;
+
         @include smartPhone {
             padding: 0.5rem;
         }
+
         @include tablet {
             padding: 0.5rem;
             font-size: 1em;
         }
     }
+
     &__legend::before {
         content: "\\\\ ";
     }
+
     &__input {
         border: 1px solid $gray-500;
         font: normal 400 1.2em sans-serif;
@@ -59,13 +71,16 @@
         padding: 0.25rem;
         margin: 0.25rem;
         width: 100%;
+
         @include smartPhone {
             font: normal 400 1em sans-serif;
         }
+
         @include tablet {
             font: normal 400 1em sans-serif;
         }
     }
+
     &__textarea {
         border: 1px solid $gray-400;
         font: normal 400 1.2em sans-serif;
@@ -74,9 +89,11 @@
         margin: 0.25rem;
         width: 100%;
         height: 8rem;
+
         @include smartPhone {
             font: normal 400 1em sans-serif;
         }
+
         @include tablet {
             font: normal 400 1em sans-serif;
         }

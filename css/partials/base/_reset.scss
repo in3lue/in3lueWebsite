@@ -1,5 +1,6 @@
 @import "../utilities/vars";
 @import "../utilities/mixinQueries";
+
 * {
     margin: 0;
     padding: 0;
@@ -50,21 +51,27 @@ body {
     font-family: 'Lato', sans-serif;
     color: $gray-800;
     margin: 0px auto;
+
     @include smartPhone {
         font-size: 0.75em;
     }
+
     @include lsPhone {
         font-size: 0.75em;
     }
+
     @include tablet {
         font-size: 0.8em;
     }
+
     @include lsTablet {
         font-size: 0.8em;
     }
+
     @include xLarge {
         font-size: 1em;
     }
+
     @include xxLarge {
         font-size: 1em;
     }
